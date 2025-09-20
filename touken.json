@@ -1,0 +1,28 @@
+[
+  {
+    "id": 3,
+    "name": "三日月宗近",
+    "type": "太刀",
+    "hp": 60,
+    "attack": 95,
+    "defense": 85,
+    "mobility": 70,
+    "power": 60,
+    "critical": 35,
+    "scout": 45,
+    "conceal": 40
+  },
+  {
+    "id": 5,
+    "name": "小狐丸",
+    "type": "太刀",
+    "hp": 58,
+    "attack": 92,
+    "defense": 83,
+    "mobility": 72,
+    "power": 58,
+    "critical": 34,
+    "scout": 46,
+    "conceal": 39
+  }
+]
