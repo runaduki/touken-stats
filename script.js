@@ -1,96 +1,196 @@
-$(document).ready(function () {
-  if (typeof wanakana === 'undefined') {
-    console.warn("wanakana が読み込まれていません。index.html で <script src='https://unpkg.com/wanakana'></script> を script.js より前に配置してください。");
+// script.js
+$(function () {
+  // キャッシュ用データ
+  let baseData = [];
+  let kiwamiData = [];
+
+  // 表示モード
+  let currentView = "tok"; // デフォルトを "base" (特だけ) にする
+
+document.addEventListener("click", e => {
+  if (!e.target.classList.contains("mode-btn")) return;
+
+const btn = e.target;
+  const mode = btn.dataset.mode;
+
+  // 押しても .active は付けない
+   btn.classList.remove("active");
+
+  if (mode === "reset") {
+    // 刀種・刀派の選択をリセット
+    activeTypes.clear();
+    activeSchools.clear();
+    document.querySelectorAll(".filter-btn.active").forEach(btn => btn.classList.remove("active"));
+  } else {
+    currentMode = mode;
   }
 
-  var table = $('#touken-table').DataTable({
-    ajax: {
-      url: "touken.json",
-      dataSrc: function (json) {
-        // JSON を受け取ったら読み(ふりがな)を小文字ひらがなで追加・総合値を計算
-        json.forEach(item => {
-          // idを数値に（安全策）
-          item.id = item.id !== undefined ? Number(item.id) : null;
+  applyFilters();
+});
 
-          // 期待フィールドがない場合のデフォルト
-          item.name = item.name || "";
-          // JSON に 'reading' または 'kana'（読み）があることが前提
-          // 例: "reading": "みかづきむねちか"（ひらがな） または "reading": "ミカヅキ"（カタカナ）
-          item.reading = item.reading || item.kana || ""; 
+function applyFilters() {
+  document.querySelectorAll("#toukenTable tbody tr").forEach(tr => {
+    const isKiwami = tr.dataset.stage === "極"; // JSONに stage を追加する想定
+    const isTok = tr.dataset.stage === "特";
 
-          // normalize: ひらがなに（カタカナ→ひらがな、ローマ字→かなも変換）
-          try {
-            item.reading_hira = item.reading ? wanakana.toHiragana(String(item.reading).toLowerCase()) : "";
-          } catch (e) {
-            item.reading_hira = String(item.reading || "");
-          }
+    // モード切替判定
+    let matchMode = true;
+    if (currentMode === "tok") matchMode = isTok;
+    if (currentMode === "kiwami") matchMode = isKiwami;
 
-          // 総合値が無ければ計算（数値が文字列のときも対応）
-          if (item.total === undefined || item.total === null) {
-            const nums = ['hp','attack','defense','mobility','power','critical','scout','conceal'];
-            let sum = 0;
-            nums.forEach(k => { sum += Number(item[k] || 0); });
-            item.total = sum;
-          }
-        });
-        console.log("読み込み完了: 件数=", json.length, "最初の行:", json[0]);
-        return json;
-      }
-    },
+    // 刀種・刀派フィルタ
+    const matchType = activeTypes.size === 0 || activeTypes.has(tr.dataset.type);
+    const matchSchool = activeSchools.size === 0 || activeSchools.has(tr.dataset.school);
+
+    tr.style.display = matchMode && matchType && matchSchool ? "" : "none";
+  });
+}
+
+
+  // フィルター状態
+  const activeTypes = new Set();
+  const activeSchools = new Set();
+
+  // DataTable を空データで初期化（1回だけ）
+  const table = $('#touken-table').DataTable({
+    data: [],
     columns: [
       { data: "id" },
-      { data: "name" },
-      { data: "reading_hira", visible: false, searchable: true }, // 隠し列：読み（ひらがな化済み）
+      { data: "name", render: (d, t, row) => `<a class="touken-name" href="detail.html?id=${row.id}">${d}</a>` },
       { data: "type" },
       { data: "school" },
-      { data: "total" },
-      { data: "hp" },
-      { data: "attack" },
-      { data: "defense" },
-      { data: "mobility" },
-      { data: "power" },
-      { data: "critical" },
-      { data: "scout" },
-      { data: "conceal" }
+      { data: "stats.hp" },
+      { data: "stats.attack" },
+      { data: "stats.defense" },
+      { data: "stats.mobility" },
+      { data: "stats.power" },
+      { data: "stats.scout" },
+      { data: "stats.conceal" },
+      { data: "stats.critical" }
     ],
-    columnDefs: [
-      // id列：0を特別扱いして常に最上に
-      {
-        targets: 0,
-        render: function (data, type) {
-          if (type === 'sort' || type === 'type') {
-            return Number(data) === 0 ? -Infinity : Number(data);
-          }
-          return data;
-        }
-      }
-    ],
-    order: [[0, "asc"]],
-    scrollX: true,
-    pageLength: 25,
-    language: {
-      url: "//cdn.datatables.net/plug-ins/1.13.4/i18n/ja.json"
-    }
-  });
-
-  // TOP3強調
-  table.on('draw', function () {
-    let rows = table.rows({ order: 'applied', search: 'applied' }).nodes();
-    $(rows).removeClass('rank1 rank2 rank3');
-    $(rows).slice(0, 3).each(function (i, row) {
-      $(row).addClass('rank' + (i + 1));
-    });
-  });
-
-  /* --- ここから検索の説明 ---
-     DataTables の標準グローバル検索は "visible な列" や "searchable" なデータを対象にします。
-     上で隠し列 reading_hira を searchable:true にしているので、
-     検索ボックスに入れた文字列（ひらがな）が reading_hira にマッチすればヒットします。
-     漢字で入力した場合は name（漢字）列にヒットします — つまり両対応です。
-  */
-
-  // デバッグ用: ネットワークやコンソールを確認したい場合に使う
-  table.on('xhr', function () {
-    console.log("XHR 完了: DataTables にデータが入っています。");
-  });
+order: [[0, "asc"]],
+  scrollX: true,
+  language: {
+    url: "//cdn.datatables.net/plug-ins/1.13.4/i18n/ja.json"
+  },
+  // 👇検索欄と表だけ
+  dom: 'ft'
 });
+
+  // まず2つのJSONを読み込む（kiwamiファイルが無ければ空配列扱い）
+  Promise.all([
+    fetch("data/touken_base.json").then(r => r.ok ? r.json() : []).catch(() => []),
+    fetch("data/touken_kiwami.json").then(r => r.ok ? r.json() : []).catch(() => [])
+  ]).then(([base, kiwami]) => {
+    baseData = Array.isArray(base) ? base : [];
+    kiwamiData = Array.isArray(kiwami) ? kiwami : [];
+
+// JSON読込後
+$('.mode-btn').removeClass('active');               // 全部リセット
+//$('.mode-btn[data-mode="tok"]').addClass('active'); // 「特だけ」だけ赤
+currentView = "tok"; // デフォルトは tok
+updateTable();       // 表示を更新
+
+
+    // Table に初期表示（特だけ）
+    updateTable();
+  }).catch(err => {
+    console.error('JSON 読み込みでエラー', err);
+  });
+
+
+  // 表示を更新する関数
+function updateTable() {
+  let data = [];
+  if (currentView === "tok") {
+    data = baseData.slice();       // 特だけ
+  } else if (currentView === "kiwami") {
+    data = kiwamiData.slice();     // 極だけ
+  } else if (currentView === "both") {
+    data = baseData.concat(kiwamiData); // 両方
+  }
+
+// 正規化
+  const normalized = data.map(item => {
+    const it = Object.assign({}, item);
+     it.school = it.school || "-";   // データは "-" のまま残す
+    it.type = it.type || "";
+    it.stats = it.stats || {};
+    return it;
+  });
+
+    table.clear();
+    table.rows.add(normalized);
+    table.draw();
+
+    // 既存フィルタ（刀種/刀派）があるなら再適用
+    applyColumnFilters();
+  }
+
+
+
+  // フィルターボタン（刀種/刀派）のクリックでトグル
+  $(document).on('click', '.filter-btn', function () {
+      if ($(this).hasClass('mode-btn')) return;
+   const $b = $(this).toggleClass('active');
+  const t = $b.data('type');
+  const s = $b.data('school');
+
+ if (t !== undefined) {
+    if (activeTypes.has(t)) activeTypes.delete(t);
+    else activeTypes.add(t);
+  }
+    if (s !== undefined) {
+    if (activeSchools.has(s)) activeSchools.delete(s);
+    else activeSchools.add(s);
+  }
+
+  applyColumnFilters();
+  });
+
+  // モード切替（特 / 極 / 両方 / 選択解除）
+$(document).on('click', '.mode-btn', function () {
+  const mode = $(this).data('mode');
+
+  if (mode === "reset") {
+    activeTypes.clear();
+    activeSchools.clear();
+    $('.filter-btn').removeClass('active');
+    applyColumnFilters();
+    return;
+  }
+
+
+
+  // 特 / 極 / 両方切り替え
+  currentView = mode;
+  updateTable();
+});
+
+  // DataTables のカラム検索で絞り込む（AND条件）
+  function applyColumnFilters() {
+    // 刀種（col index 2）
+    if (activeTypes.size) {
+      const pattern = '^(' + [...activeTypes].map(escapeRegex).join('|') + ')$';
+      table.column(2).search(pattern, true, false);
+    } else {
+      table.column(2).search('');
+    }
+
+    // 刀派（col index 3）
+    if (activeSchools.size) {
+      const pattern = '^(' + [...activeSchools].map(escapeRegex).join('|') + ')$';
+      table.column(3).search(pattern, true, false);
+    } else {
+      table.column(3).search('');
+    }
+
+    table.draw();
+  }
+
+  function escapeRegex(str) {
+    return String(str).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+});
+
+
