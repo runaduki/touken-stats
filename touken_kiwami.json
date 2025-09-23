@@ -1,0 +1,20 @@
+[
+
+  {
+    "id": 4,
+     "name": "三日月宗近 極",
+  "reading": "みかづきむねちか",
+  "type": "太刀",
+  "school": "三条",
+    "stats": {
+"hp": 63,
+  "attack": 72,
+  "defense": 72,
+  "mobility": 37,
+  "power": 37,
+  "scout": 38,
+  "conceal": 35,
+  "critical": 30
+    }
+  }
+]
