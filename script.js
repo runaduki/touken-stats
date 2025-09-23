@@ -53,30 +53,31 @@ function applyFilters() {
 
   // DataTable を空データで初期化（1回だけ）
   const table = $('#touken-table').DataTable({
-    data: [],
-    columns: [
-      { data: "id" , width: "60px" },
-      { data: "name",width: "180px" , render: (d, t, row) => `<a class="touken-name" href="detail.html?id=${row.id}">${d}</a>` },
-      { data: "type" ,width: "80px"},
-      { data: "school" ,width: "120px"},
-      { data: "stats.hp" },
-      { data: "stats.attack" },
-      { data: "stats.defense" },
-      { data: "stats.mobility" },
-      { data: "stats.power" },
-      { data: "stats.scout" },
-      { data: "stats.conceal" },
-      { data: "stats.critical" }
-    ],
-order: [[0, "asc"]],
+  data: [],
+  columns: [
+    { data: "id", width: "60px" },
+    { data: "name", width: "180px",
+      render: (d, t, row) => `<a class="touken-name" href="detail.html?id=${row.id}">${d}</a>` },
+    { data: "type", width: "80px" },
+    { data: "school", width: "120px" },
+    { data: "stats.hp" },
+    { data: "stats.attack" },
+    { data: "stats.defense" },
+    { data: "stats.mobility" },
+    { data: "stats.power" },
+    { data: "stats.scout" },
+    { data: "stats.conceal" },
+    { data: "stats.critical" }
+  ],
+  order: [[0, "asc"]],
   scrollX: true,
   language: {
     url: "//cdn.datatables.net/plug-ins/1.13.4/i18n/ja.json"
   },
-  // 👇検索欄と表だけ
-  dom: 'ft'
+  dom: 'ft',
   paging: false
 });
+
 
   // まず2つのJSONを読み込む（kiwamiファイルが無ければ空配列扱い）
   Promise.all([
@@ -199,6 +200,7 @@ $(document).on('click', '.mode-btn', function () {
     return String(str).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   }
 });
+
 
 
 
