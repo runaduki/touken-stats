@@ -33,4 +33,211 @@
   "critical": 30
     }
   }
+
+{
+  "id": 5,
+  "name": "小狐丸",
+  "yomi": "こぎつねまる",
+  "type": "太刀",
+  "school": "三条",
+  "stats": {
+  "hp": 58,
+  "attack": 68,
+  "defense": 69,
+  "mobility": 41,
+  "power": 53,
+  "scout": 38,
+  "conceal": 30,
+  "critical": 28
+},
+{
+  "id": 7,
+  "name": "石切丸",
+  "yomi": "いしきりまる",
+  "type": "大太刀",
+  "school": "三条",
+  "stats": {
+  "hp": 72,
+  "attack": 85,
+  "defense": 68,
+  "mobility": 13,
+  "power": 61,
+  "scout": 15,
+  "conceal": 23,
+  "critical": 32
+},
+{
+  "id": 9,
+  "name": "岩融",
+  "yomi": "いわとおし",
+  "type": "薙刀",
+  "school": "三条",
+  "hp": 60,
+  "attack": 68,
+  "defense": 51,
+  "mobility": 42,
+  "power": 61,
+  "scout": 41,
+  "conceal": 35,
+  "critical": 29
+},
+{
+  "id": 11,
+  "name": "今剣",
+  "yomi": "いまのつるぎ",
+  "type": "短刀",
+  "school": "三条",
+    "stats": {
+  "hp": 33,
+  "attack": 26,
+  "defense": 38,
+  "mobility": 58,
+  "power": 31,
+  "scout": 49,
+  "conceal": 40,
+  "critical": 45
+},
+{
+  "id": 13,
+  "name": "大典太光世",
+  "yomi": "おおでんたみつよ",
+  "type": "太刀",
+  "school": "三池",
+    "stats": {
+  "hp": 70,
+  "attack": 76,
+  "defense": 70,
+  "mobility": 35,
+  "power": 52,
+  "scout": 30,
+  "conceal": 27,
+  "critical": 37
+},
+{
+  "id": 15,
+  "name": "ソハヤノツルキ",
+  "yomi": "そはやのつるぎ",
+  "type": "太刀",
+  "school": "三池",
+  "hp": 61,
+  "attack": 70,
+  "defense": 72,
+  "mobility": 48,
+  "power": 49,
+  "scout": 32,
+  "conceal": 31,
+  "critical": 25
+},
+{
+  "id": 17,
+  "name": "数珠丸恒次",
+  "yomi": "じゅずまるつねつぐ",
+  "type": "太刀",
+  "school": "青江",
+    "stats": {
+  "hp": 71,
+  "attack": 62,
+  "defense": 78,
+  "mobility": 38,
+  "power": 52,
+  "scout": 34,
+  "conceal": 30,
+  "critical": 29
+},
+{
+  "id": 19,
+  "name": "にっかり青江",
+  "yomi": "にっかりあおえ",
+  "type": "脇差",
+  "school": "青江",
+    "stats": {
+  "hp": 39,
+  "attack": 44,
+  "defense": 46,
+  "mobility": 52,
+  "power": 41,
+  "scout": 55,
+  "conceal": 45,
+  "critical": 40
+},
+{
+  "id": 21,
+  "name": "鬼丸国綱",
+  "yomi": "おにまるくにつな",
+  "type": "太刀",
+  "school": "粟田口",
+    "stats": {
+  "hp": 64,
+  "attack": 77,
+  "defense": 67,
+  "mobility": 44,
+  "power": 54,
+  "scout": 33,
+  "conceal": 30,
+  "critical": 33
+},
+{
+  "id": 23,
+  "name": "鳴狐",
+  "yomi": "なきぎつね",
+  "type": "打刀",
+  "school": "粟田口",
+    "stats": {
+  "hp": 48,
+  "attack": 58,
+  "defense": 50,
+  "mobility": 51,
+  "power": 53,
+  "scout": 46,
+  "conceal": 41,
+  "critical": 35
+},
+
+{
+  "id": 25,
+  "name": "一期一振",
+  "yomi": "いちごひとふり",
+  "type": "太刀",
+  "school": "粟田口",
+  "hp": 61,
+  "attack": 70,
+  "defense": 72,
+  "mobility": 36,
+  "power": 57,
+  "scout": 39,
+  "conceal": 31,
+  "critical": 30
+},
+{
+  "id": 27,
+  "name": "鯰尾藤四郎",
+  "yomi": "なまずおとうしろう",
+  "type": "脇差",
+  "school": "粟田口",
+    "stats": {
+  "hp": 35,
+  "attack": 45,
+  "defense": 45,
+  "mobility": 48,
+  "power": 40,
+  "scout": 52,
+  "conceal": 46,
+  "critical": 47
+},
+{
+  "id": 29,
+  "name": "骨喰藤四郎",
+  "yomi": "ほねばみとうしろう",
+  "type": "脇差",
+  "school": "粟田口",
+    "stats": {
+  "hp": 41,
+  "attack": 47,
+  "defense": 48,
+  "mobility": 54,
+  "power": 36,
+  "scout": 49,
+  "conceal": 43,
+  "critical": 49
+},
 ]
