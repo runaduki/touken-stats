@@ -7,14 +7,14 @@
   "type": "太刀",
   "school": "三条",
     "stats": {
-"hp": 63,
-  "attack": 72,
-  "defense": 72,
-  "mobility": 37,
-  "power": 37,
-  "scout": 38,
-  "conceal": 35,
-  "critical": 30
+"hp": 101,
+  "attack": 129,
+  "defense": 130,
+  "mobility": 67,
+  "power": 89,
+  "scout": 66,
+  "conceal": 69,
+  "critical": 69
     }
   }
 ]
