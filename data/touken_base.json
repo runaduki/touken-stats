@@ -5,6 +5,7 @@
     "reading": "どうじきりやすつな はくらく",
     "type": "太刀",
     "school": "-",
+    "kiwami": false,
     "stats": {
       "hp": 55,
       "attack": 74,
@@ -22,6 +23,7 @@
   "reading": "みかづきむねちか",
   "type": "太刀",
   "school": "三条",
+  "kiwami": true, 
     "stats": {
 "hp": 63,
   "attack": 72,
@@ -40,6 +42,7 @@
   "yomi": "こぎつねまる",
   "type": "太刀",
   "school": "三条",
+  "kiwami": true, 
   "stats": {
   "hp": 58,
   "attack": 68,
@@ -57,6 +60,7 @@
   "yomi": "いしきりまる",
   "type": "大太刀",
   "school": "三条",
+  "kiwami": true, 
   "stats": {
   "hp": 72,
   "attack": 85,
@@ -74,6 +78,7 @@
   "yomi": "いわとおし",
   "type": "薙刀",
   "school": "三条",
+  "kiwami": true, 
     "stats": {
   "hp": 60,
   "attack": 68,
@@ -91,6 +96,7 @@
   "yomi": "いまのつるぎ",
   "type": "短刀",
   "school": "三条",
+  "kiwami": true, 
     "stats": {
   "hp": 33,
   "attack": 26,
@@ -108,6 +114,7 @@
   "yomi": "おおでんたみつよ",
   "type": "太刀",
   "school": "三池",
+  "kiwami": true, 
     "stats": {
   "hp": 70,
   "attack": 76,
@@ -125,6 +132,7 @@
   "yomi": "そはやのつるぎ",
   "type": "太刀",
   "school": "三池",
+  "kiwami": true, 
      "stats": {
   "hp": 61,
   "attack": 70,
@@ -142,6 +150,7 @@
   "yomi": "じゅずまるつねつぐ",
   "type": "太刀",
   "school": "青江",
+  "kiwami": true, 
     "stats": {
   "hp": 71,
   "attack": 62,
@@ -159,6 +168,7 @@
   "yomi": "にっかりあおえ",
   "type": "脇差",
   "school": "青江",
+  "kiwami": true, 
     "stats": {
   "hp": 39,
   "attack": 44,
@@ -176,6 +186,7 @@
   "yomi": "おにまるくにつな",
   "type": "太刀",
   "school": "粟田口",
+  "kiwami": true, 
     "stats": {
   "hp": 64,
   "attack": 77,
@@ -193,6 +204,7 @@
   "yomi": "なきぎつね",
   "type": "打刀",
   "school": "粟田口",
+  "kiwami": true, 
     "stats": {
   "hp": 48,
   "attack": 58,
@@ -211,6 +223,7 @@
   "yomi": "いちごひとふり",
   "type": "太刀",
   "school": "粟田口",
+  "kiwami": true, 
    "stats": {
   "hp": 61,
   "attack": 70,
@@ -228,6 +241,7 @@
   "yomi": "なまずおとうしろう",
   "type": "脇差",
   "school": "粟田口",
+  "kiwami": true, 
     "stats": {
   "hp": 35,
   "attack": 45,
@@ -245,6 +259,7 @@
   "yomi": "ほねばみとうしろう",
   "type": "脇差",
   "school": "粟田口",
+  "kiwami": true, 
     "stats": {
   "hp": 41,
   "attack": 47,
@@ -254,6 +269,24 @@
   "scout": 49,
   "conceal": 43,
   "critical": 49
+}
+},
+{
+  "id": 31,
+  "name": "平野藤四郎",
+  "yomi": "ひらのとうしろう",
+  "type": "短刀",
+  "school": "粟田口",
+  "kiwami": true, 
+    "stats": {
+  "hp": 34,
+  "attack": 32,
+  "defense": 45,
+  "mobility": 56,
+  "power": 30,
+  "scout": 48,
+  "conceal": 38,
+  "critical": 37
 }
 }
 ]
