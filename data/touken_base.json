@@ -1,0 +1,36 @@
+[
+  {
+    "id": 0,
+    "name": "童子切安綱 剥落",
+    "reading": "どうじきりやすつな はくらく",
+    "type": "太刀",
+    "school": "-",
+    "stats": {
+      "hp": 55,
+      "attack": 74,
+      "defense": 70,
+      "mobility": 50,
+      "power": 50,
+      "scout": 0,
+      "conceal": 34,
+      "critical": 44
+    }
+  },
+  {
+    "id": 3,
+     "name": "三日月宗近",
+  "reading": "みかづきむねちか",
+  "type": "太刀",
+  "school": "三条",
+    "stats": {
+"hp": 63,
+  "attack": 72,
+  "defense": 72,
+  "mobility": 37,
+  "power": 37,
+  "scout": 38,
+  "conceal": 35,
+  "critical": 30
+    }
+  }
+]
