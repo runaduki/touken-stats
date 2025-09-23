@@ -1,0 +1,41 @@
+        body { font-family: sans-serif; }
+
+    /* 表 */
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 4px 6px; text-align: center; }
+    th { background: #f0f0f0; }
+
+
+    /* フィルターボタンの見た目 */
+    .filter-section { margin-bottom: 1rem; }
+    .filter-group { margin: 8px 0; }
+
+
+
+/* グリッド配置（刀種・刀派共通） */
+.type-grid,
+.school-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 120px); /* 横5列均等 */
+  gap: 8px; 
+  margin-top: 8px;
+}
+
+
+
+
+/* ボタン基本デザイン */
+.mode-btn,
+.filter-btn {
+  display: inline-block;
+      width: 120px; /* 長い名前も収まる幅 */
+       padding: 6px 8px;
+      margin: 4px;
+      text-align: center;
+      white-space: nowrap;
+      border: 1px solid #aaa;
+     border-radius: 6px;
+       background-color: #f9f9f9;
+     cursor: pointer;
+      transition: 0.2s;
+}
