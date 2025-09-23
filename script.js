@@ -75,7 +75,7 @@ order: [[0, "asc"]],
   },
   // 👇検索欄と表だけ
   dom: 'ft'
-      paging: false,
+  paging: false
 });
 
   // まず2つのJSONを読み込む（kiwamiファイルが無ければ空配列扱い）
@@ -199,6 +199,7 @@ $(document).on('click', '.mode-btn', function () {
     return String(str).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   }
 });
+
 
 
 
