@@ -60,6 +60,18 @@ function applyFilters() {
       render: (d, t, row) => `<a class="touken-name" href="detail.html?id=${row.id}">${d}</a>` },
     { data: "type", width: "80px" },
     { data: "school", width: "120px" },
+
+    // 👇 総合値（ここを追加）
+    { 
+      data: null, 
+      className: "col-total",
+      render: function (d, t, row) {
+        const s = row.stats || {};
+        return (s.hp||0) + (s.attack||0) + (s.defense||0) + (s.mobility||0) +
+               (s.power||0) + (s.scout||0) + (s.conceal||0) + (s.critical||0);
+      }
+    },
+    
   { data: "stats.hp",        className: "col-hp" },
     { data: "stats.attack",    className: "col-atk" },
     { data: "stats.defense",   className: "col-def" },
@@ -200,6 +212,7 @@ $(document).on('click', '.mode-btn', function () {
     return String(str).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   }
 });
+
 
 
 
