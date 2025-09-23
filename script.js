@@ -60,14 +60,14 @@ function applyFilters() {
       render: (d, t, row) => `<a class="touken-name" href="detail.html?id=${row.id}">${d}</a>` },
     { data: "type", width: "80px" },
     { data: "school", width: "120px" },
-    { data: "stats.hp" },
-    { data: "stats.attack" },
-    { data: "stats.defense" },
-    { data: "stats.mobility" },
-    { data: "stats.power" },
-    { data: "stats.scout" },
-    { data: "stats.conceal" },
-    { data: "stats.critical" }
+  { data: "stats.hp",        className: "col-hp" },
+    { data: "stats.attack",    className: "col-atk" },
+    { data: "stats.defense",   className: "col-def" },
+    { data: "stats.mobility",  className: "col-spd" },
+    { data: "stats.power",     className: "col-pow" },
+    { data: "stats.scout",     className: "col-scout" },
+    { data: "stats.conceal",   className: "col-hide" },
+    { data: "stats.critical",  className: "col-crit" }
   ],
   order: [[0, "asc"]],
   scrollX: true,
@@ -200,6 +200,7 @@ $(document).on('click', '.mode-btn', function () {
     return String(str).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   }
 });
+
 
 
 
