@@ -2,48 +2,105 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>刀剣男士ステータス表</title>
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
   <style>
-    /* TOP3強調（必要なら色を変えてください） 
-    .rank1 { background-color: #ffd700 !important; font-weight: bold; }
-    .rank2 { background-color: #c0c0c0 !important; font-weight: bold; }
-    .rank3 { background-color: #cd7f32 !important; font-weight: bold; }
-  */
+
+
+
   </style>
 </head>
 <body>
   <h1>刀剣男士ステータス表</h1>
 
-  <table id="touken-table" class="display nowrap" style="width:100%">
+  <!-- フィルター -->
+   <div class="filter-header">表示切替</div>
+<div class="mode-filters">
+   <button class="filter-btn mode-btn" data-mode="tok">特だけ</button>
+  <button class="filter-btn mode-btn" data-mode="kiwami">極だけ</button>
+  <button class="filter-btn mode-btn" data-mode="both">両方</button>
+</div>
+
+<div class="filter-group">
+  <strong>刀種:</strong>
+  <div class="type-grid">
+      <button class="filter-btn" data-type="短刀">短刀</button>
+      <button class="filter-btn" data-type="脇差">脇差</button>
+      <button class="filter-btn" data-type="打刀">打刀</button>
+      <button class="filter-btn" data-type="太刀">太刀</button>
+      <button class="filter-btn" data-type="大太刀">大太刀</button>
+      <button class="filter-btn" data-type="槍">槍</button>
+<button class="filter-btn" data-type="薙刀">薙刀</button>
+<button class="filter-btn" data-type="剣">剣</button>
+
+<div class="mode-filters">
+  <button class="filter-btn mode-btn" data-mode="reset">選択解除</button>
+</div>
+    </div>
+    <div class="filter-group">
+  <strong>刀派:</strong>
+  <div class="school-grid">
+    <button class="filter-btn" data-school="三条">三条</button>
+    <button class="filter-btn" data-school="三池">三池</button>
+    <button class="filter-btn" data-school="青江">青江</button>
+    <button class="filter-btn" data-school="粟田口">粟田口</button>
+
+    <button class="filter-btn" data-school="古備前">古備前</button>
+    <button class="filter-btn" data-school="来">来</button>
+    <button class="filter-btn" data-school="村正">村正</button>
+    <button class="filter-btn" data-school="貞宗">貞宗</button>
+
+    <button class="filter-btn" data-school="長船">長船</button>
+    <button class="filter-btn" data-school="左文字">左文字</button>
+    <button class="filter-btn" data-school="兼定">兼定</button>
+    <button class="filter-btn" data-school="堀川">堀川</button>
+    
+    <button class="filter-btn" data-school="虎徹">虎徹</button>
+    <button class="filter-btn" data-school="虎徹...?">虎徹...?</button>
+    <button class="filter-btn" data-school="正宗">正宗</button>
+    <button class="filter-btn" data-school="江">江</button>
+
+    <button class="filter-btn" data-school="福岡一文字">福岡一文字</button>
+    <button class="filter-btn" data-school="豊後国行平">豊後国行平</button>
+    <button class="filter-btn" data-school="広光">広光</button>
+    <button class="filter-btn" data-school="鵜飼">鵜飼</button>
+
+    <button class="filter-btn" data-school="-">刀派なし</button>
+<div class="mode-filters">
+
+  <button class="filter-btn mode-btn" data-mode="reset">選択解除</button>
+</div>
+
+
+    </div>
+  </div>
+
+  <!-- 一覧表 -->
+  <table id="touken-table">
     <thead>
       <tr>
         <th>刀帳番号</th>
         <th>名前</th>
-        <th style="display:none">読み(内部)</th> <!-- hidden column for kana reading -->
         <th>刀種</th>
         <th>刀派</th>
-        <th>総合値</th>
         <th>生存</th>
         <th>打撃</th>
         <th>統率</th>
         <th>機動</th>
         <th>衝力</th>
-        <th>必殺</th>
         <th>偵察</th>
         <th>隠蔽</th>
+        <th>必殺</th>
+        
       </tr>
     </thead>
+    <tbody></tbody>
   </table>
-
- <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- DataTables -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-<!-- Wanakana（ブラウザ用UMDビルド） -->
-<script src="https://unpkg.com/wanakana@4.0.2/umd/wanakana.min.js"></script>
-<!-- 自作スクリプト -->
+<script src="https://unpkg.com/wanakana"></script>
 <script src="script.js"></script>
-
+<link rel="stylesheet" href="style.css">
 </body>
 </html>
