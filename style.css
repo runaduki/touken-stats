@@ -147,5 +147,45 @@ th { background: #f0f0f0; }
   position: relative;  /* relative基準にする */
 }
 
+/*総合値*/
+th.col-total { background: #ff6d01; }
+td.col-total { background: #fff1e7; }
+
+/* 生存 */
+th.col-hp    { background: #37a666; }  
+td.col-hp    { background: #ebf6f0; }
+
+/* 打撃 */
+th.col-atk   { background: #e44c31; }  
+td.col-atk   { background: #fcedeb; }
+
+/* 統率 */
+th.col-def   { background: #63eae4; }  
+td.col-def   { background: #f0f8fc; }
+
+
+/* 機動 */
+th.col-spd   { background: #efa30b; } 
+td.col-spd   { background: #fdf6e7; }
+
+
+/* 衝力 */
+th.col-pow   { background: #82b856; }  
+td.col-pow   { background: #f3f8ee; }
+
+
+/* 偵察 */
+th.col-scout { background: #dc6c92; } 
+td.col-scout { background: #fcf1f4; }
+
+
+/* 隠蔽 */
+th.col-hide  { background: #8a71c0; }  
+td.col-hide  { background: #f4f1f9; }
+
+/* 必殺 */
+th.col-crit  { background: #6790b0; } 
+td.col-crit  { background: #f0f4f7; }
+
 
 
