@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>刀剣ステータスランキング</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+</head>
+<body>
+  <h1>刀剣ステータスランキング</h1>
+
+  <!-- ジャンプリンク -->
+    <h2>特ランキング</h2>
+    <div class="jump-links">
+      <button class="jump-btn" onclick="scrollToSection('base-total')">総合値</button>
+      <button class="jump-btn" onclick="scrollToSection('base-hp')">生存</button>
+      <button class="jump-btn" onclick="scrollToSection('base-attack')">打撃</button>
+      <button class="jump-btn" onclick="scrollToSection('base-defense')">統率</button>
+      <button class="jump-btn" onclick="scrollToSection('base-mobility')">機動</button>
+      <button class="jump-btn" onclick="scrollToSection('base-power')">衝力</button>
+      <button class="jump-btn" onclick="scrollToSection('base-scout')">偵察</button>
+      <button class="jump-btn" onclick="scrollToSection('base-conceal')">隠蔽</button>
+      <button class="jump-btn" onclick="scrollToSection('base-critical')">必殺</button>
+ </div>
+
+    <h2>極ランキング</h2>
+    <div class="jump-links">
+      <button class="jump-btn" onclick="scrollToSection('kiwami-total')">総合値</buttoni>
+      <button class="jump-btn" onclick="scrollToSection('kiwami-hp')">生存</button>
+      <button class="jump-btn" onclick="scrollToSection('kiwami-attack')">打撃</button>
+      <button class="jump-btn" onclick="scrollToSection('kiwami-defense')">統率</button>
+      <button class="jump-btn" onclick="scrollToSection('kiwami-mobility')">機動</button>
+      <button class="jump-btn" onclick="scrollToSection('kiwami-power')">衝力</button>
+      <button class="jump-btn" onclick="scrollToSection('kiwami-scout')">偵察</button>
+      <button class="jump-btn" onclick="scrollToSection('kiwami-conceal')">隠蔽</button>
+      <button class="jump-btn" onclick="scrollToSection('kiwami-critical')">必殺</button>
+</div>
+
+  <!-- ランキングテーブル群 -->
+  <h2 id="base-total">特ランキング - 総合値</h2>
+  <table id="ranking-base-total" class="display" style="width:100%"></table>
+  <!-- ランキング表の下に配置 -->
+<div class="back-top">
+  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
+</div>
+
+
+  <h2 id="base-hp">特ランキング - 生存</h2>
+  <table id="ranking-base-hp" class="display" style="width:100%"></table>
+  <!-- ランキング表の下に配置 -->
+<div class="back-top">
+  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
+</div>
+
+
+  <!-- ...（特ランキング残りの表を追加） -->
+
+  <h2 id="kiwami-total">極ランキング - 総合値</h2>
+  <table id="ranking-kiwami-total" class="display" style="width:100%"></table>
+  <!-- ランキング表の下に配置 -->
+<div class="back-top">
+  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
+</div>
+
+
+  <h2 id="kiwami-hp">極ランキング - 生存</h2>
+  <table id="ranking-kiwami-hp" class="display" style="width:100%"></table>
+  <!-- ランキング表の下に配置 -->
+<div class="back-top">
+  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
+</div>
+
+
+  <!-- ...（極ランキング残りの表を追加） -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="ranking.js"></script>
+  <link rel="stylesheet" href="ranking.css">
+</body>
+</html>

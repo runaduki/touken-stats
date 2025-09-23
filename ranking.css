@@ -1,0 +1,101 @@
+body { 
+    font-family: sans-serif; padding: 20px; 
+}
+
+h1 { 
+    margin-bottom: 20px; 
+}
+
+h2 { 
+    margin-top: 60px; 
+}
+
+h3 { 
+    margin-top: 30px; 
+}
+
+ /* 表 */
+/* ランキング表 共通 */
+table[id^="ranking-"] {
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+  width: 100%;
+  max-width: 622px;       /* 横幅制限 */
+  margin: 0 0 40px 0;     /* 左寄せにする（autoを消す） */
+}
+
+/* DataTables ラッパーの余計な中央寄せを無効化 */
+.dataTables_wrapper {
+  text-align: left !important;
+  margin: 0 0 20px 0 !important;
+}
+
+
+th, td { border: 1px solid #ccc; padding: 4px 6px; text-align: center; }
+th { background: #f0f0f0; }
+
+
+
+/* 表ヘッダー */
+table[id^="ranking-"] th {
+  background: #f0f0f0;
+  padding: 6px 8px;
+  text-align: center;   /* ヘッダー中央揃え */
+}
+
+/* 表データ */
+table[id^="ranking-"] td {
+  border: 1px solid #ccc;
+  padding: 4px 6px;
+  text-align: center;   /* データも中央揃え */
+}
+
+/* DataTables が上書きするのを無効化して強制中央寄せ */
+table.dataTable th,
+table.dataTable td {
+  text-align: center !important;
+  vertical-align: middle !important; /* 縦方向も真ん中に */
+}
+
+/* ボタンをまとめる親 */
+.jump-links {
+  display: grid;
+  grid-template-columns: repeat(5, 120px); /* 横5列均等配置 */
+  gap: 8px;
+  margin-top: 8px;
+  max-width: 622px; /* 中央寄せしたいなら幅を決めて margin: auto; */
+ 
+}
+
+/* ジャンプボタン共通デザイン */
+.jump-btn {
+  width: 120px;
+  padding: 6px 8px;
+  text-align: center;
+  white-space: nowrap;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* ホバー時 */
+.jump-btn:hover {
+  background-color: #eee;
+  border-color: #888;
+}
+
+
+/* ホバー時 */
+.jump-btn:hover {
+  background-color: #eee;
+  border-color: #888;
+}
+
+#touken-table_wrapper {
+  max-width: 922px;
+  position: relative;  /* relative基準にする */
+}
+
+
