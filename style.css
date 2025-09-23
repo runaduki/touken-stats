@@ -1,5 +1,29 @@
 body { font-family: sans-serif; }
 
+.page-nav {
+
+  margin-bottom: 20px;  /* h1との間隔 */
+}
+
+.nav-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-btn:hover {
+  background-color: #eee;
+  border-color: #888;
+}
+
+
  /* 表 */
 table { border-collapse: collapse; width: 100%; }
 th, td { border: 1px solid #ccc; padding: 4px 6px; text-align: center; }
@@ -186,6 +210,7 @@ td.col-hide  { background: #f4f1f9; }
 /* 必殺 */
 th.col-crit  { background: #6790b0; } 
 td.col-crit  { background: #f0f4f7; }
+
 
 
 
