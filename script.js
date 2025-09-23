@@ -55,10 +55,10 @@ function applyFilters() {
   const table = $('#touken-table').DataTable({
     data: [],
     columns: [
-      { data: "id" },
-      { data: "name", render: (d, t, row) => `<a class="touken-name" href="detail.html?id=${row.id}">${d}</a>` },
-      { data: "type" },
-      { data: "school" },
+      { data: "id" , width: "60px" },
+      { data: "name",width: "180px" , render: (d, t, row) => `<a class="touken-name" href="detail.html?id=${row.id}">${d}</a>` },
+      { data: "type" ,width: "80px"},
+      { data: "school" ,width: "120px"},
       { data: "stats.hp" },
       { data: "stats.attack" },
       { data: "stats.defense" },
@@ -75,6 +75,7 @@ order: [[0, "asc"]],
   },
   // 👇検索欄と表だけ
   dom: 'ft'
+      paging: false,
 });
 
   // まず2つのJSONを読み込む（kiwamiファイルが無ければ空配列扱い）
@@ -101,15 +102,18 @@ updateTable();       // 表示を更新
 
   // 表示を更新する関数
 function updateTable() {
-  let data = [];
+let data = [];
   if (currentView === "tok") {
     data = baseData.slice();       // 特だけ
   } else if (currentView === "kiwami") {
     data = kiwamiData.slice();     // 極だけ
   } else if (currentView === "both") {
     data = baseData.concat(kiwamiData); // 両方
+  } else if (currentView === "kiwami-exist") {
+    // baseData の中で kiwami:true のものだけ
+    data = baseData.filter(item => item.kiwami === true);
   }
-
+  
 // 正規化
   const normalized = data.map(item => {
     const it = Object.assign({}, item);
@@ -195,6 +199,7 @@ $(document).on('click', '.mode-btn', function () {
     return String(str).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   }
 });
+
 
 
 
