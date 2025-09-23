@@ -143,6 +143,9 @@ function updateTable() {
     if (s !== undefined) {
     if (activeSchools.has(s)) activeSchools.delete(s);
     else activeSchools.add(s);
+  }　else if (currentView === "kiwami-exist") {
+    // baseData の中で kiwami:true のものだけ
+    data = baseData.filter(item => item.kiwami === true);
   }
 
   applyColumnFilters();
@@ -192,5 +195,6 @@ $(document).on('click', '.mode-btn', function () {
     return String(str).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   }
 });
+
 
 
