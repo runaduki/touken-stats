@@ -1,14 +1,93 @@
-        body { font-family: sans-serif; }
+body { font-family: sans-serif; }
 
-    /* 表 */
-    table { border-collapse: collapse; width: 100%; }
-    th, td { border: 1px solid #ccc; padding: 4px 6px; text-align: center; }
-    th { background: #f0f0f0; }
+ /* 表 */
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #ccc; padding: 4px 6px; text-align: center; }
+th { background: #f0f0f0; }
+
+#touken-table_wrapper .dataTables_filter {
+  display: flex;
+  justify-content: flex-end; /* 右端に揃える */
+  margin-bottom: 10px;       /* 表との間隔 */
+}
 
 
-    /* フィルターボタンの見た目 */
-    .filter-section { margin-bottom: 1rem; }
-    .filter-group { margin: 8px 0; }
+.dataTables_filter label {
+  font-size: 14px;
+  line-height: 2.0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dataTables_filter input {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 180px;
+}
+
+
+#touken-table th {
+  white-space: nowrap !important;
+}
+
+/* DataTables wrapper も同じ幅で左寄せ */
+#touken-table_wrapper {
+  max-width: 870px;   /* 表と同じ幅 */
+  margin: 0;          /* 左寄せ固定 */
+  position: relative; /* 検索バーの基準にする */
+}
+
+/* 検索バーを表の右端の真上に配置 */
+#touken-table_wrapper .dataTables_filter {
+  position: absolute;
+  top: -40px;   /* 表の上に浮かせる */
+  right: 0;     /* wrapper（表）の右端にぴったり */
+}
+  /* 表の刀帳番号 */
+#touken-table th:nth-child(1),
+#touken-table td:nth-child(1) {
+  width: 70px;
+  min-width: 70px;
+  max-width: 70px;
+  white-space: nowrap;
+}
+
+/* 表の名前（童子切安綱 剥落に合わせる） */
+#touken-table th:nth-child(2),
+#touken-table td:nth-child(2) {
+  width: 180px;
+  min-width: 180px;
+  max-width: 180px;
+  white-space: nowrap;
+}
+
+/* 表の刀種（大太刀に合わせる） */
+#touken-table th:nth-child(3),
+#touken-table td:nth-child(3) {
+  width: 80px;   /* 大太刀が収まる幅 */
+  min-width: 80px;
+  max-width: 80px;
+  white-space: nowrap;
+}
+
+/* 表の刀派（五文字に合わせる） */
+#touken-table th:nth-child(4),
+#touken-table td:nth-child(4) {
+  width: 120px;  /* 五文字が収まる幅 */
+  min-width: 120px;
+  max-width: 120px;
+  white-space: nowrap;
+}
+
+
+
+
+/* フィルターボタンの見た目 */
+.filter-section { margin-bottom: 1rem; }
+.filter-group { margin: 8px 0; }
 
 
 
@@ -39,3 +118,34 @@
      cursor: pointer;
       transition: 0.2s;
 }
+
+/* DataTables 検索ボックスの配置 */
+.dataTables_wrapper {
+  position: relative; /* 相対基準にする */
+}
+
+/* ラベルと入力欄 */
+.dataTables_filter label {
+  font-size: 14px;
+  line-height: 2.0;
+  display: flex;
+  align-items: center; /* 縦中央揃え */
+  gap: 6px;            /* ラベルと入力欄の間隔 */
+}
+
+.dataTables_filter input {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 180px; /* 入力欄の幅を固定（お好みで） */
+}
+
+
+#touken-table_wrapper {
+  max-width: 865px;
+  position: relative;  /* relative基準にする */
+}
+
+
+
