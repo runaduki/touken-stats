@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>刀剣乱舞 経験値計算機</title>
+  <link rel="stylesheet" href="Lv.css">
+</head>
+<body>
+  <h1>刀剣乱舞 経験値計算機</h1>
+
+  <div class="calculator">
+    <label for="typeSelect">刀種を選択:</label>
+    <label for="typeSelect">刀種を選択:</label>
+<select id="typeSelect">
+  <option value="tantou">短刀</option>
+  <option value="waki_yari_nagi">脇差・槍・薙刀</option>
+<option value="uchigatana_rare2">打刀（レア2）</option>
+  <option value="uchigatana_rare3">打刀（レア3）</option>
+  <option value="tachi">太刀</option>
+  <option value="ootachi">大太刀</option>
+  
+</select>
+
+    </select>
+
+    <label for="expInput">累積経験値を入力:</label>
+    <input type="number" id="expInput" placeholder="例: 123456">
+
+    <button onclick="calcLevel()">レベルを計算</button>
+
+    <p id="result">ここに結果が表示されます</p>
+  </div>
+
+  <script src="Lv.js"></script>
+</body>
+</html>
