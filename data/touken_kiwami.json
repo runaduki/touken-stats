@@ -1078,6 +1078,7 @@
   "type": "槍",
   "school": "-",
   "stats": {
+  "hp": 103,
   "attack": 120,
   "defense": 84,
   "mobility": 70,
