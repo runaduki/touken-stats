@@ -1,20 +1,1318 @@
 [
-
-  {
-    "id": 4,
-     "name": "三日月宗近 極",
+{
+  "id": 4,
+  "name": "三日月宗近 極",
   "reading": "みかづきむねちか",
   "type": "太刀",
   "school": "三条",
-    "stats": {
-"hp": 101,
-  "attack": 129,
-  "defense": 130,
-  "mobility": 67,
-  "power": 89,
-  "scout": 66,
-  "conceal": 69,
-  "critical": 69
-    }
+  "stats": {
+    "hp": 101,
+    "attack": 129,
+    "defense": 130,
+    "mobility": 67,
+    "power": 89,
+    "scout": 66,
+    "conceal": 69,
+    "critical": 69
   }
+},
+{
+  "id": 6,
+  "name": "小狐丸 極",
+  "yomi": "こぎつねまる",
+  "type": "太刀",
+  "school": "三条",
+  "stats": {
+    "hp": 102,
+    "attack": 125,
+    "defense": 120,
+    "mobility": 69,
+    "power": 86,
+    "scout": 70,
+    "conceal": 56,
+    "critical": 72
+  }
+},
+{
+  "id": 8,
+  "name": "石切丸 極",
+  "yomi": "いしきりまる",
+  "type": "大太刀",
+  "school": "三条",
+  "stats": {
+    "hp": 105,
+    "attack": 145,
+    "defense": 112,
+    "mobility": 26,
+    "power": 93,
+    "scout": 46,
+    "conceal": 50,
+    "critical": 72
+  }
+},
+{
+  "id": 10,
+  "name": "岩融 極",
+  "yomi": "いわとおし",
+  "type": "薙刀",
+  "school": "三条",
+  "stats": {
+    "hp": 77,
+    "attack": 125,
+    "defense": 98,
+    "mobility": 57,
+    "power": 115,
+    "scout": 58,
+    "conceal": 58,
+    "critical": 90
+  }
+},
+{
+  "id": 12,
+  "name": "今剣 極",
+  "yomi": "いまのつるぎ",
+  "type": "短刀",
+  "school": "三条",
+  "stats": {
+    "hp": 50,
+    "attack": 80,
+    "defense": 82,
+    "mobility": 142,
+    "power": 35,
+    "scout": 120,
+    "conceal": 109,
+    "critical": 60
+  }
+},
+{
+  "id": 14,
+  "name": "大典太光世 極",
+  "yomi": "おおでんたみつよ",
+  "type": "太刀",
+  "school": "三池",
+  "stats": {
+    "hp": 105,
+    "attack": 138,
+    "defense": 131,
+    "mobility": 61,
+    "power": 87,
+    "scout": 57,
+    "conceal": 59,
+    "critical": 84
+  }
+},
+{
+  "id": 16,
+  "name": "ソハヤノツルキ 極",
+  "yomi": "そはやのつるぎ",
+  "type": "太刀",
+  "school": "三池",
+  "stats": {
+    "hp": 96,
+    "attack": 127,
+    "defense": 129,
+    "mobility": 68,
+    "power": 84,
+    "scout": 58,
+    "conceal": 64,
+    "critical": 70
+  }
+},
+{
+  "id": 18,
+  "name": "数珠丸恒次 極",
+  "yomi": "じゅずまるつねつぐ",
+  "type": "太刀",
+  "school": "青江",
+  "stats": {
+    "hp": 106,
+    "attack": 123,
+    "defense": 144,
+    "mobility": 60,
+    "power": 81,
+    "scout": 69,
+    "conceal": 63,
+    "critical": 70
+  }
+},
+{
+  "id": 20,
+  "name": "にっかり青江 極",
+  "yomi": "にっかりあおえ",
+  "type": "脇差",
+  "school": "青江",
+  "stats": {
+    "hp": 68,
+    "attack": 92,
+    "defense": 88,
+    "mobility": 76,
+    "power": 48,
+    "scout": 119,
+    "conceal": 143,
+    "critical": 55
+  }
+},
+{
+  "id": 22,
+  "name": "鬼丸国綱 極",
+  "yomi": "おにまるくにつな",
+  "type": "太刀",
+  "school": "粟田口",
+  "stats": {
+  "hp": 103,
+  "attack": 140,
+  "defense": 120,
+  "mobility": 70,
+  "power": 89,
+  "scout": 64,
+  "conceal": 61,
+  "critical": 76
+  }
+},
+{
+  "id": 24,
+  "name": "鳴狐 極",
+  "yomi": "なきぎつね",
+  "type": "打刀",
+  "school": "粟田口",
+  "stats": {
+  "hp": 67,
+  "attack": 103,
+  "defense": 98,
+  "mobility": 66,
+  "power": 69,
+  "scout": 90,
+  "conceal": 82,
+  "critical": 77
+  }
+},
+
+{
+  "id": 26,
+  "name": "一期一振 極",
+  "yomi": "いちごひとふり",
+  "type": "太刀",
+  "school": "粟田口",
+  "stats": {
+  "hp": 94,
+  "attack": 129,
+  "defense": 128,
+  "mobility": 57,
+  "power": 97,
+  "scout": 68,
+  "conceal": 65,
+  "critical": 68
+  }
+},
+{
+  "id": 28,
+  "name": "鯰尾藤四郎 極",
+  "yomi": "なまずおとうしろう",
+  "type": "脇差",
+  "school": "粟田口",
+  "stats": {
+  "hp": 65,
+  "attack": 95,
+  "defense": 87,
+  "mobility": 70,
+  "power": 47,
+  "scout": 112,
+  "conceal": 145,
+  "critical": 64
+  }
+},
+{
+  "id": 30,
+  "name": "骨喰藤四郎 極",
+  "yomi": "ほねばみとうしろう",
+  "type": "脇差",
+  "school": "粟田口",
+  "stats": {
+  "hp": 70,
+  "attack": 99,
+  "defense": 90,
+  "mobility": 79,
+  "power": 41,
+  "scout": 106,
+  "conceal": 140,
+  "critical": 67
+  }
+},
+{
+  "id": 32,
+  "name": "平野藤四郎 極",
+  "yomi": "ひらのとうしろう",
+  "type": "短刀",
+  "school": "粟田口",
+"stats": {
+  "hp": 55,
+  "attack": 90,
+  "defense": 78,
+  "mobility": 138,
+  "power": 42,
+  "scout": 115,
+  "conceal": 112,
+  "critical": 50
+}
+},
+{
+  "id": 34,
+  "name": "厚藤四郎 極",
+  "reading": "あつしとうしろう",
+  "type": "短刀",
+  "school": "粟田口",
+  "stats": {
+  "hp": 58,
+  "attack": 87,
+  "defense": 84,
+  "mobility": 125,
+  "power": 44,
+  "scout": 110,
+  "conceal": 108,
+  "critical": 48
+  }
+},
+{
+  "id": 36,
+  "name": "後藤藤四郎 極",
+  "reading": "ごとうとうしろう",
+  "type": "短刀",
+  "school": "粟田口",
+  "stats": {
+  "hp": 51,
+  "attack": 84,
+  "defense": 82,
+  "mobility": 143,
+  "power": 42,
+  "scout": 113,
+  "conceal": 108,
+  "critical": 50
+  }
+},
+{
+  "id": 38,
+  "name": "信濃藤四郎 極",
+  "reading": "しなのとうしろう",
+  "type": "短刀",
+  "school": "粟田口",
+    "stats": {
+  "hp": 52,
+  "attack": 81,
+  "defense": 80,
+  "mobility": 138,
+  "power": 41,
+  "scout": 120,
+  "conceal": 124,
+  "critical": 48
+  }
+},
+{
+  "id": 40,
+  "name": "前田藤四郎 極",
+  "reading": "まえだとうしろう",
+  "type": "短刀",
+  "school": "粟田口",
+   "stats": {
+  "hp": 57,
+  "attack": 81,
+  "defense": 83,
+  "mobility": 130,
+  "power": 39,
+  "scout": 112,
+  "conceal": 118,
+  "critical": 47
+  }
+},
+{
+  "id": 42,
+  "name": "秋田藤四郎 極",
+  "reading": "あきたとうしろう",
+  "type": "短刀",
+  "school": "粟田口",
+  "stats": {
+  "hp": 59,
+  "attack": 82,
+  "defense": 83,
+  "mobility": 140,
+  "power": 39,
+  "scout": 113,
+  "conceal": 110,
+  "critical": 52
+  }
+},
+{
+  "id": 44,
+  "name": "博多藤四郎 極",
+  "reading": "はかたとうしろう",
+  "type": "短刀",
+  "school": "粟田口",
+  "stats": {
+  "hp": 54,
+  "attack": 85,
+  "defense": 74,
+  "mobility": 145,
+  "power": 35,
+  "scout": 122,
+  "conceal": 112,
+  "critical": 49
+  }
+},
+{
+  "id": 46,
+  "name": "乱藤四郎 極",
+  "reading": "みだれとうしろう",
+  "type": "短刀",
+  "school": "粟田口",
+  "stats": {
+    "hp": 55,
+  "attack": 86,
+  "defense": 76,
+  "mobility": 138,
+  "power": 38,
+  "scout": 114,
+  "conceal": 105,
+  "critical": 58
+  }
+},
+{
+  "id": 48,
+  "name": "五虎退 極",
+  "reading": "ごこたい",
+  "type": "短刀",
+  "school": "粟田口",
+  "stats": {
+  "hp": 52,
+  "attack": 86,
+  "defense": 75,
+  "mobility": 142,
+  "power": 38,
+  "scout": 115,
+  "conceal": 120,
+  "critical": 50
+  }
+},
+{
+  "id": 50,
+  "name": "薬研藤四郎 極",
+  "reading": "やげん とうしろう",
+  "type": "短刀",
+  "school": "粟田口",
+  "stats": {
+  "hp": 58,
+  "attack": 89,
+  "defense": 79,
+  "mobility": 135,
+  "power": 36,
+  "scout": 119,
+  "conceal": 119,
+  "critical": 42
+  }
+},
+{
+  "id": 52,
+  "name": "包丁藤四郎 極",
+  "reading": "ほうちょう とうしろう",
+  "type": "短刀",
+  "school": "粟田口",
+  "stats": {
+  "hp": 56,
+  "attack": 91,
+  "defense": 76,
+  "mobility": 127,
+  "power": 43,
+  "scout": 109,
+  "conceal": 120,
+  "critical": 53
+  }
+},
+{
+  "id": 54,
+  "name": "大包平 極",
+  "reading": "おおかねひら",
+  "type": "太刀",
+  "school": "古備前",
+  "stats": {
+  "hp": 108,
+  "attack": 133,
+  "defense": 125,
+  "mobility": 64,
+  "power": 92,
+  "scout": 59,
+  "conceal": 56,
+  "critical": 80
+  }
+},
+{
+  "id": 56,
+  "name": "鶯丸 極",
+  "reading": "うぐいすまる",
+  "type": "太刀",
+  "school": "古備前",
+  "stats": {
+  "hp": 98,
+  "attack": 125,
+  "defense": 127,
+  "mobility": 60,
+  "power": 90,
+  "scout": 67,
+  "conceal": 67,
+  "critical": 65
+  }
+},
+{
+  "id": 58,
+  "name": "明石国行 極",
+  "reading": "あかしくにゆき",
+  "type": "太刀",
+  "school": "来",
+  "stats": {
+  "hp": 94,
+  "attack": 120,
+  "defense": 127,
+  "mobility": 72,
+  "power": 76,
+  "scout": 75,
+  "conceal": 80,
+  "critical": 55
+  }
+},
+{
+  "id": 60,
+  "name": "蛍丸 極",
+  "reading": "ほたるまる",
+  "type": "大太刀",
+  "school": "来",
+  "stats": {
+  "hp": 107,
+  "attack": 139,
+  "defense": 123,
+  "mobility": 37,
+  "power": 90,
+  "scout": 50,
+  "conceal": 66,
+  "critical": 66
+  }
+},
+{
+  "id": 62,
+  "name": "愛染国俊 極",
+  "reading": "あいぜんくにとし",
+  "type": "短刀",
+  "school": "来",
+  "stats": {
+  "hp": 56,
+  "attack": 84,
+  "defense": 76,
+  "mobility": 143,
+  "power": 39,
+  "scout": 115,
+  "conceal": 116,
+  "critical": 50
+  }
+},
+{
+  "id": 64,
+  "name": "千子村正 極",
+  "reading": "せんごむらまさ",
+  "type": "打刀",
+  "school": "村正",
+  "stats": {
+     "hp": 69,
+  "attack": 122,
+  "defense": 105,
+  "mobility": 57,
+  "power": 88,
+  "scout": 76,
+  "conceal": 55,
+  "critical": 98
+  }
+},
+{
+  "id": 66,
+  "name": "蜻蛉切 極",
+  "reading": "とんぼきり",
+  "type": "槍",
+  "school": "村正",
+  "stats": {
+  "hp": 105,
+  "attack": 126,
+  "defense": 87,
+  "mobility": 60,
+  "power": 109,
+  "scout": 50,
+  "conceal": 53,
+  "critical": 90
+  }
+},
+{
+  "id": 68,
+  "name": "物吉貞宗 極",
+  "reading": "ものよしさだむね",
+  "type": "脇差",
+  "school": "貞宗",
+  "stats": {
+ "hp": 79,
+  "attack": 86,
+  "defense": 105,
+  "mobility": 77,
+  "power": 54,
+  "scout": 110,
+  "conceal": 135,
+  "critical": 68
+  }
+},{
+  "id": 70,
+  "name": "太鼓鐘貞宗 極",
+  "reading": "たいこがねさだむね",
+  "type": "短刀",
+  "school": "貞宗",
+  "stats": {
+  "hp": 52,
+  "attack": 92,
+  "defense": 80,
+  "mobility": 141,
+  "power": 35,
+  "scout": 121,
+  "conceal": 105,
+  "critical": 59
+  }
+},
+{
+  "id": 72,
+  "name": "亀甲貞宗 極",
+  "reading": "きっこうさだむね",
+  "type": "打刀",
+  "school": "貞宗",
+  "stats": {
+  "hp": 72,
+  "attack": 102,
+  "defense": 97,
+  "mobility": 58,
+  "power": 70,
+  "scout": 83,
+  "conceal": 83,
+  "critical": 81
+  }
+},
+{
+  "id": 74,
+  "name": "燭台切光忠 極",
+  "reading": "しょくだいきりみつただ",
+  "type": "太刀",
+  "school": "長船",
+  "stats": {
+  "hp": 100,
+  "attack": 135,
+  "defense": 133,
+  "mobility": 55,
+  "power": 80,
+  "scout": 68,
+  "conceal": 60,
+  "critical": 69
+  }
+},
+{
+  "id": 76,
+  "name": "大般若長光 極",
+  "reading": "だいはんにゃながみつ",
+  "type": "太刀",
+  "school": "長船",
+  "stats": {
+  "hp": 101,
+  "attack": 126,
+  "defense": 135,
+  "mobility": 63,
+  "power": 81,
+  "scout": 55,
+  "conceal": 72,
+  "critical": 70
+  }
+},
+{
+  "id": 78,
+  "name": "小竜景光 極",
+  "reading": "こりゅうかげみつ",
+  "type": "太刀",
+  "school": "長船",
+  "stats": {
+  "hp": 103,
+  "attack": 128,
+  "defense": 133,
+  "mobility": 70,
+  "power": 75,
+  "scout": 76,
+  "conceal": 56,
+  "critical": 67
+  }
+},
+{
+  "id": 80,
+  "name": "江雪左文字 極",
+  "reading": "こうせつさもんじ",
+  "type": "太刀",
+  "school": "左文字",
+  "stats": {
+  "hp": 101,
+  "attack": 132,
+  "defense": 123,
+  "mobility": 59,
+  "power": 91,
+  "scout": 67,
+  "conceal": 69,
+  "critical": 65
+  }
+},
+{
+  "id": 82,
+  "name": "宗三左文字 極",
+  "reading": "そうざさもんじ",
+  "type": "打刀",
+  "school": "左文字",
+  "stats": {
+  "hp": 73,
+  "attack": 97,
+  "defense": 97,
+  "mobility": 58,
+  "power": 65,
+  "scout": 82,
+  "conceal": 78,
+  "critical": 80
+  }
+},
+{
+  "id": 84,
+  "name": "小夜左文字 極",
+  "reading": "さよさもんじ",
+  "type": "短刀",
+  "school": "左文字",
+  "stats": {
+  "hp": 60,
+  "attack": 92,
+  "defense": 80,
+  "mobility": 126,
+  "power": 39,
+  "scout": 112,
+  "conceal": 108,
+  "critical": 42
+  }
+},
+{
+  "id": 86,
+  "name": "加州清光 極",
+  "reading": "かしゅうきよみつ",
+  "type": "打刀",
+  "school": "-",
+  "stats": {
+  "hp": 63,
+  "attack": 102,
+  "defense": 96,
+  "mobility": 63,
+  "power": 65,
+  "scout": 90,
+  "conceal": 91,
+  "critical": 70
+  }
+},
+{
+  "id": 88,
+  "name": "大和守安定 極",
+  "reading": "やまとのかみやすさだ",
+  "type": "打刀",
+  "school": "-",
+  "stats": {
+  "hp": 62,
+  "attack": 97,
+  "defense": 96,
+  "mobility": 57,
+  "power": 66,
+  "scout": 79,
+  "conceal": 91,
+  "critical": 87
+  }
+},
+{
+  "id": 90,
+  "name": "歌仙兼定 極",
+  "reading": "かせんかねさだ",
+  "type": "打刀",
+  "school": "兼定",
+  "stats": {
+  "hp": 63,
+  "attack": 112,
+  "defense": 90,
+  "mobility": 58,
+  "power": 81,
+  "scout": 82,
+  "conceal": 78,
+  "critical": 75
+  }
+},
+{
+  "id": 92,
+  "name": "和泉守兼定 極",
+  "reading": "いずみのかみかねさだ",
+  "type": "打刀",
+  "school": "兼定",
+  "stats": {
+  "hp": 72,
+  "attack": 125,
+  "defense": 114,
+  "mobility": 60,
+  "power": 85,
+  "scout": 76,
+  "conceal": 65,
+  "critical": 102
+  }
+},
+{
+  "id": 94,
+  "name": "陸奥守吉行 極",
+  "reading": "むつのかみよしゆき",
+  "type": "打刀",
+  "school": "-",
+  "stats": {
+  "hp": 61,
+  "attack": 106,
+  "defense": 100,
+  "mobility": 59,
+  "power": 67,
+  "scout": 88,
+  "conceal": 82,
+  "critical": 76
+  }
+},
+{
+  "id": 96,
+  "name": "山姥切国広 極",
+  "reading": "やまんばぎりくにひろ",
+  "type": "打刀",
+  "school": "堀川",
+  "stats": {
+  "hp": 64,
+  "attack": 103,
+  "defense": 96,
+  "mobility": 62,
+  "power": 79,
+  "scout": 88,
+  "conceal": 81,
+  "critical": 67
+  }
+},
+{
+  "id": 98,
+  "name": "山伏国広 極",
+  "reading": "やまぶしくにひろ",
+  "type": "太刀",
+  "school": "堀川",
+  "stats": {
+  "hp": 96,
+  "attack": 129,
+  "defense": 121,
+  "mobility": 60,
+  "power": 91,
+  "scout": 64,
+  "conceal": 60,
+  "critical": 64
+  }
+},
+{
+  "id": 100,
+  "name": "堀川国広 極",
+  "reading": "ほりかわくにひろ",
+  "type": "脇差",
+  "school": "堀川",
+  "stats": {
+  "hp": 65,
+  "attack": 99,
+  "defense": 85,
+  "mobility": 73,
+  "power": 41,
+  "scout": 114,
+  "conceal": 145,
+  "critical": 61
+  }
+},
+{
+  "id": 102,
+  "name": "蜂須賀虎徹 極",
+  "reading": "はちすかこてつ",
+  "type": "打刀",
+  "school": "虎徹",
+  "stats": {
+  "hp": 77,
+  "attack": 105,
+  "defense": 97,
+  "mobility": 60,
+  "power": 66,
+  "scout": 86,
+  "conceal": 82,
+  "critical": 71
+  }
+},
+{
+  "id": 104,
+  "name": "浦島虎徹 極",
+  "reading": "うらしまこてつ",
+  "type": "脇差",
+  "school": "虎徹",
+  "stats": {
+  "hp": 78,
+  "attack": 92,
+  "defense": 95,
+  "mobility": 61,
+  "power": 50,
+  "scout": 114,
+  "conceal": 138,
+  "critical": 55
+  }
+},
+{
+  "id": 106,
+  "name": "長曽祢虎徹 極",
+  "reading": "ながそねこてつ",
+  "type": "打刀",
+  "school": "虎徹…？",
+  "stats": {
+  "hp": 74,
+  "attack": 113,
+  "defense": 104,
+  "mobility": 57,
+  "power": 71,
+  "scout": 77,
+  "conceal": 82,
+  "critical": 70
+  }
+},
+{
+  "id": 111,
+  "name": "髭切 極",
+  "reading": "ひげきり",
+  "type": "太刀",
+  "school": "-",
+  "stats": {
+  "hp": 95,
+  "attack": 130,
+  "defense": 128,
+  "mobility": 63,
+  "power": 89,
+  "scout": 73,
+  "conceal": 54,
+  "critical": 82
+  }
+},
+{
+  "id": 115,
+  "name": "膝丸 極",
+  "reading": "ひざまる",
+  "type": "太刀",
+  "school": "-",
+  "stats": {
+  "hp": 93,
+  "attack": 126,
+  "defense": 128,
+  "mobility": 78,
+  "power": 83,
+  "scout": 54,
+  "conceal": 74,
+  "critical": 77
+  }
+},
+{
+  "id": 117,
+  "name": "大倶利伽羅 極",
+  "reading": "おおくりから",
+  "type": "打刀",
+  "school": "広光",
+  "stats": {
+  "hp": 80,
+  "attack": 120,
+  "defense": 108,
+  "mobility": 52,
+  "power": 83,
+  "scout": 75,
+  "conceal": 67,
+  "critical": 65
+  }
+},
+{
+  "id": 119,
+  "name": "へし切長谷部 極",
+  "reading": "へしきりはせべ",
+  "type": "打刀",
+  "school": "-",
+  "stats": {
+  "hp": 69,
+  "attack": 109,
+  "defense": 99,
+  "mobility": 70,
+  "power": 68,
+  "scout": 82,
+  "conceal": 82,
+  "critical": 71
+  }
+},
+{
+  "id": 121,
+  "name": "不動行光 極",
+  "reading": "ふどうゆきみつ",
+  "type": "短刀",
+  "school": "-",
+  "stats": {
+  "hp": 56,
+  "attack": 87,
+  "defense": 79,
+  "mobility": 138,
+  "power": 38,
+  "scout": 118,
+  "conceal": 112,
+  "critical": 55
+  }
+},
+{
+  "id": 123,
+  "name": "獅子王 極",
+  "reading": "ししおう",
+  "type": "太刀",
+  "school": "-",
+  "stats": {
+  "hp": 91,
+  "attack": 119,
+  "defense": 128,
+  "mobility": 63,
+  "power": 91,
+  "scout": 60,
+  "conceal": 71,
+  "critical": 60
+  }
+},
+{
+  "id": 125,
+  "name": "小烏丸 極",
+  "reading": "こがらすまる",
+  "type": "太刀",
+  "school": "-",
+  "stats": {
+  "hp": 107,
+  "attack": 124,
+  "defense": 122,
+  "mobility": 79,
+  "power": 80,
+  "scout": 72,
+  "conceal": 55,
+  "critical": 76
+  }
+},
+
+{
+  "id": 129,
+  "name": "同田貫正国 極",
+  "reading": "どうだぬきまさくに",
+  "type": "打刀",
+  "school": "-",
+  "stats": {
+  "hp": 73,
+  "attack": 116,
+  "defense": 101,
+  "mobility": 56,
+  "power": 78,
+  "scout": 78,
+  "conceal": 66,
+  "critical": 69
+  }
+},
+{
+  "id": 131,
+  "name": "鶴丸国永 極",
+  "reading": "つるまるくになが",
+  "type": "太刀",
+  "school": "-",
+  "stats": {
+  "hp": 95,
+  "attack": 130,
+  "defense": 124,
+  "mobility": 70,
+  "power": 88,
+  "scout": 65,
+  "conceal": 58,
+  "critical": 79
+  }
+},
+{
+  "id": 133,
+  "name": "太郎太刀 極",
+  "reading": "たろうたち",
+  "type": "大太刀",
+  "school": "-",
+  "stats": {
+  "hp": 110,
+  "attack": 140,
+  "defense": 125,
+  "mobility": 35,
+  "power": 93,
+  "scout": 56,
+  "conceal": 65,
+  "critical": 48
+  }
+},
+{
+  "id": 135,
+  "name": "次郎太刀 極",
+  "reading": "じろうたち",
+  "type": "大太刀",
+  "school": "-",
+  "stats": {
+  "hp": 105,
+  "attack": 144,
+  "defense": 130,
+  "mobility": 30,
+  "power": 87,
+  "scout": 50,
+  "conceal": 68,
+  "critical": 45
+  }
+},
+{
+  "id": 137,
+  "name": "日本号 極",
+  "reading": "にほんごう",
+  "type": "槍",
+  "school": "-",
+  "stats": {
+  "attack": 120,
+  "defense": 84,
+  "mobility": 70,
+  "power": 104,
+  "scout": 54,
+  "conceal": 53,
+  "critical": 102
+  }
+},
+{
+  "id": 139,
+  "name": "御手杵 極",
+  "reading": "おてぎね",
+  "type": "槍",
+  "school": "-",
+  "stats": {
+  "hp": 99,
+  "attack": 122,
+  "defense": 94,
+  "mobility": 62,
+  "power": 103,
+  "scout": 60,
+  "conceal": 53,
+  "critical": 87
+  }
+},
+{
+  "id": 141,
+  "name": "巴形薙刀 極",
+  "reading": "ともえがたなぎなた",
+  "type": "薙刀",
+  "school": "-",
+  "stats": {
+  "hp": 76,
+  "attack": 119,
+  "defense": 100,
+  "mobility": 61,
+  "power": 108,
+  "scout": 60,
+  "conceal": 68,
+  "critical": 89
+  }
+},
+{
+  "id": 143,
+  "name": "毛利藤四郎 極",
+  "reading": "もうりとうしろう",
+  "type": "短刀",
+  "school": "粟田口",
+  "stats": {
+  "hp": 59,
+  "attack": 85,
+  "defense": 78,
+  "mobility": 125,
+  "power": 42,
+  "scout": 122,
+  "conceal": 118,
+  "critical": 42
+  }
+},
+{
+  "id": 145,
+  "name": "篭手切江 極",
+  "reading": "こてぎりごう",
+  "type": "脇差",
+  "school": "江",
+  "stats": {
+  "hp": 74,
+  "attack": 90,
+  "defense": 98,
+  "mobility": 67,
+  "power": 52,
+  "scout": 111,
+  "conceal": 141,
+  "critical": 65
+  }
+},
+{
+  "id": 147,
+  "name": "謙信景光 極",
+  "reading": "けんしんかげみつ",
+  "type": "短刀",
+  "school": "長船",
+  "stats": {
+  "hp": 58,
+  "attack": 86,
+  "defense": 81,
+  "mobility": 134,
+  "power": 40,
+  "scout": 117,
+  "conceal": 107,
+  "critical": 54
+  }
+},
+{
+  "id": 149,
+  "name": "小豆長光 極",
+  "reading": "あずきながみつ",
+  "type": "太刀",
+  "school": "長船",
+  "stats": {
+  "hp": 92,
+  "attack": 129,
+  "defense": 138,
+  "mobility": 69,
+  "power": 76,
+  "scout": 59,
+  "conceal": 56,
+  "critical": 76
+  }
+},
+{
+  "id": 151,
+  "name": "日向正宗 極",
+  "reading": "ひゅうがまさむね",
+  "type": "短刀",
+  "school": "正宗",
+  "stats": {
+  "hp": 57,
+  "attack": 82,
+  "defense": 84,
+  "mobility": 139,
+  "power": 36,
+  "scout": 120,
+  "conceal": 120,
+  "critical": 43
+  }
+},
+{
+  "id": 153,
+  "name": "静形薙刀 極",
+  "reading": "しずかがたなぎなた",
+  "type": "薙刀",
+  "school": "-",
+  "stats": {
+  "hp": 80,
+  "attack": 123,
+  "defense": 95,
+  "mobility": 59,
+  "power": 113,
+  "scout": 59,
+  "conceal": 60,
+  "critical": 92
+  }
+},
+{
+  "id": 155,
+  "name": "南泉一文字 極",
+  "reading": "なんせんいちもんじ",
+  "type": "打刀",
+  "school": "福岡一文字",
+  "stats": {
+  "hp": 66,
+  "attack": 100,
+  "defense": 95,
+  "mobility": 67,
+  "power": 77,
+  "scout": 80,
+  "conceal": 77,
+  "critical": 87
+  }
+},
+{
+  "id": 157,
+  "name": "千代金丸 極",
+  "reading": "ちよがねまる",
+  "type": "太刀",
+  "school": "-",
+  "stats": {
+  "hp": 105,
+  "attack": 122,
+  "defense": 132,
+  "mobility": 59,
+  "power": 75,
+  "scout": 62,
+  "conceal": 62,
+  "critical": 65
+  }
+},
+
+{
+  "id": 159,
+  "name": "山姥切長義 極",
+  "reading": "やまんばぎりちょうぎ",
+  "type": "打刀",
+  "school": "-",
+  "stats": {
+  "hp": 65,
+  "attack": 103,
+  "defense": 94,
+  "mobility": 65,
+  "power": 78,
+  "scout": 88,
+  "conceal": 81,
+  "critical": 66
+  }
+},
+
+{
+  "id": 161,
+  "name": "豊前江 極",
+  "reading": "ぶぜんごう",
+  "type": "打刀",
+  "school": "江",
+  "stats": {
+  "hp": 70,
+  "attack": 107,
+  "defense": 103,
+  "mobility": 69,
+  "power": 73,
+  "scout": 84,
+  "conceal": 66,
+  "critical": 88
+  }
+},
+{
+  "id": 171,
+  "name": "北谷菜切 極",
+  "reading": "ちゃたんなきり",
+  "type": "短刀",
+  "school": "-",
+"stats": {
+    "hp": 60,
+    "attack": 80,
+    "defense": 79,
+    "mobility": 133,
+    "power": 37,
+    "scout": 116,
+    "conceal": 117,
+    "critical": 56
+  }
+}
 ]
+
+
+
+
+
