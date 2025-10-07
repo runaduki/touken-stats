@@ -957,7 +957,7 @@
 },
 {
   "id": 108,
-  "name": "髭切 特1",
+  "name": "髭切 特",
   "reading": "ひげきり",
   "type": "太刀",
   "school": "-",
@@ -975,7 +975,7 @@
 },
 {
   "id": 109,
-  "name": "髭切 特2",
+  "name": "髭切 特二",
   "reading": "ひげきり",
   "type": "太刀",
   "school": "-",
@@ -993,7 +993,7 @@
 },
 {
   "id": 110,
-  "name": "髭切 特3",
+  "name": "髭切 特三",
   "reading": "ひげきり",
   "type": "太刀",
   "school": "-",
@@ -1011,7 +1011,7 @@
 },
 {
   "id": 113,
-  "name": "膝丸 特1",
+  "name": "膝丸 特",
   "reading": "ひざまる",
   "type": "太刀",
   "school": "-",
@@ -1029,7 +1029,7 @@
 },
 {
   "id": 114,
-  "name": "膝丸 特2",
+  "name": "膝丸 特二",
   "reading": "ひざまる",
   "type": "太刀",
   "school": "-",
@@ -2223,14 +2223,14 @@
   "school": "江",
   "kiwami": false,
   "stats": {
-    "hp": 32,
-    "attack": 41,
-    "defense": 53,
-    "mobility": 30,
-    "power": 0,
-    "scout": 39,
-    "conceal": 41,
-    "critical": 0
+    "hp": 0,
+    "attack": 32,
+    "defense": 41,
+    "mobility": 53,
+    "power": 30,
+    "scout": 0,
+    "conceal": 39,
+    "critical": 41
   }
 }
 ]
