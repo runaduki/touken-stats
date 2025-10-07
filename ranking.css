@@ -1,5 +1,8 @@
 body { 
     font-family: sans-serif; padding: 20px; 
+    background-image: url('./data/image/287_20251002180556.png'); /* 背景柄の画像 */
+  background-repeat: repeat;       /* タイル状に繰り返す */
+  background-position: top left; 
 }
 
 h1 { 
@@ -22,6 +25,7 @@ table[id^="ranking-"] {
   width: 100%;
   max-width: 622px;       /* 横幅制限 */
   margin: 0 0 40px 0;     /* 左寄せにする（autoを消す） */
+  background-color: #ffffff;
 }
 
 /* DataTables ラッパーの余計な中央寄せを無効化 */
@@ -88,14 +92,25 @@ table.dataTable td {
 
 
 /* ホバー時 */
-.jump-btn:hover {
-  background-color: #eee;
-  border-color: #888;
+.tab-menu {
+  margin: 8px 0;
+ 
 }
 
-#touken-table_wrapper {
-  max-width: 922px;
-  position: relative;  /* relative基準にする */
+.tab-menu .tab-btn {
+    display: inline-block;
+  padding: 6px 12px;
+  margin: 2px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  cursor: pointer;
+  border-radius: 4px;
+
 }
 
+.tab-menu .tab-btn.active {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
 
