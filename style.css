@@ -1,4 +1,8 @@
-body { font-family: sans-serif; }
+body { font-family: sans-serif;   
+      background-image: url('./data/image/287_20251002180556.png') ;
+  background-repeat: repeat;
+  background-position: top left;
+}
 
 .page-nav {
 
@@ -210,6 +214,7 @@ td.col-hide  { background: #f4f1f9; }
 /* 必殺 */
 th.col-crit  { background: #6790b0; } 
 td.col-crit  { background: #f0f4f7; }
+
 
 
 
