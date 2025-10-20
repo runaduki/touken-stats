@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>刀剣詳細</title>
+  <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+  <h1>刀剣詳細</h1>
+
+  <section>
+    <table id="basic-info"></table>
+    <table id="status-table"></table>
+    <table id="acquisition-table"></table>
+    <table id="category-table"></table>
+
+ <!-- リンクテーブル -->
+    <table id="link-table">
+      <thead>
+        <tr>
+          <th colspan="2" class="section-header">リンク</th>
+        </tr>
+      </thead>
+      <tbody id="link-body">
+        <!-- JSでここにリンクを生成 -->
+      </tbody>
+    </table>
+
+
+    <!-- セリフ一覧 -->
+
+    <table id="serifu-table">
+      <thead>
+        <tr>
+          <th colspan="3" class="serifu-header">セリフ一覧</th>
+        </tr>
+      </thead>
+      <tbody id="serifu-body">
+
+  <tr>
+  <th colspan="3" class="section-header">セリフ</th>
+</tr>
+
+<tr><td colspan="2" class="sub-category-header">ログイン(読み込み中)</td><td id="login_loading"></td></tr>
+<tr><td colspan="2" class="sub-category-header">ログイン(読み込み完了)</td><td id="login_loaded"></td></tr>
+<tr><td colspan="2" class="sub-category-header">ログイン(ゲームスタート)</td><td id="login_start"></td></tr>
+
+<tr><td colspan="2" class="sub-category-header">入手</td><td id="obtain_first"></td></tr>
+<tr><td colspan="2" class="sub-category-header">入手(2回目以降)</td><td id="obtain_repeat"></td></tr>
+
+<tr><td rowspan="3" colspan="2" class="sub-category-header">本丸</td><td id="honmaru_1"></td></tr>
+<tr><td id="honmaru_2"></td></tr>
+<tr><td id="honmaru_3"></td></tr>
+<tr><td colspan="2" class="sub-category-header">本丸(放置)</td><td id="honmaru_idle"></td></tr>
+<tr><td colspan="2" class="sub-category-header">本丸(負傷時)</td><td id="honmaru_injured"></td></tr>
+
+<tr><td colspan="2" class="sub-category-header">結成(隊長)</td><td id="formation_leader"></td></tr>
+<tr><td colspan="2" class="sub-category-header">結成(入替)</td><td id="formation_swap"></td></tr>
+
+<tr><td rowspan="3" colspan="2" class="sub-category-header">装備</td><td id="equip_1"></td></tr>
+<tr><td id="equip_2"></td></tr>
+<tr><td id="equip_3"></td></tr>
+
+<tr><td colspan="2" class="sub-category-header">出陣</td><td id="sortie"></td></tr>
+<tr><td colspan="2" class="sub-category-header">重傷時行軍警告</td><td id="march_warning"></td></tr>
+<tr><td colspan="2" class="sub-category-header">資源発見</td><td id="resource_found"></td></tr>
+<tr><td colspan="2" class="sub-category-header">ボス到達</td><td id="boss_reached"></td></tr>
+<tr><td colspan="2" class="sub-category-header">索敵</td><td id="scouting"></td></tr>
+
+<tr><td colspan="2" class="sub-category-header">開戦(出陣)</td><td id="battle_start_sortie"></td></tr>
+<tr><td colspan="2" class="sub-category-header">開戦(演練)</td><td id="battle_start_training"></td></tr>
+
+<tr><td colspan="2" rowspan="2" class="sub-category-header">攻撃</td><td id="attack_1"></td></tr>
+<tr><td id="attack_2"></td></tr>
+
+<tr><td colspan="2" class="sub-category-header">会心の一撃</td><td id="critical"></td></tr>
+
+<tr><td colspan="2" rowspan="2" class="sub-category-header">軽傷</td><td id="minor_damage_1"></td></tr>
+<tr><td id="minor_damage_2"></td></tr>
+
+<tr><td colspan="2" class="sub-category-header">中傷/重傷</td><td id="major_damage"></td></tr>
+<tr><td colspan="2" class="sub-category-header">真剣必殺</td><td id="shinken_hissatsu"></td></tr>
+<tr><td colspan="2" class="sub-category-header">一騎打ち</td><td id="duel"></td></tr>
+<tr><td colspan="2" class="sub-category-header">二刀開眼</td><td id="nitou_kaigan"></td></tr>
+<tr><td colspan="2" class="sub-category-header">勝利MVP</td><td id="victory_mvp"></td></tr>
+<tr><td colspan="2" class="sub-category-header">ランクアップ</td><td id="rank_up"></td></tr>
+
+<tr><td colspan="2" class="sub-category-header">任務(完了時)</td><td id="mission_complete"></td></tr>
+
+<tr><td colspan="2" class="sub-category-header">内番(馬当番)</td><td id="training_horse"></td></tr>
+<tr><td colspan="2" class="sub-category-header">内番(馬当番終了)</td><td id="training_horse_end"></td></tr>
+<tr><td colspan="2" class="sub-category-header">内番(畑当番)</td><td id="training_field"></td></tr>
+<tr><td colspan="2" class="sub-category-header">内番(畑当番終了)</td><td id="training_field_end"></td></tr>
+<tr><td colspan="2" class="sub-category-header">内番(手合せ)</td><td id="training_duel"></td></tr>
+<tr><td colspan="2" class="sub-category-header">内番(手合せ終了)</td><td id="training_duel_end"></td></tr>
+
+<tr><td colspan="2" class="sub-category-header">遠征</td><td id="expedition"></td></tr>
+<tr><td colspan="2" class="sub-category-header">遠征帰還(隊長)</td><td id="expedition_return_leader"></td></tr>
+<tr><td colspan="2" class="sub-category-header">遠征帰還(近侍)</td><td id="expedition_return_kenshi"></td></tr>
+
+<tr><td colspan="2" class="sub-category-header">鍛刀</td><td id="forge"></td></tr>
+<tr><td colspan="2" class="sub-category-header">刀装</td><td id="tosou"></td></tr>
+<tr><td colspan="2" class="sub-category-header">手入(軽傷以下)</td><td id="repair_minor"></td></tr>
+<tr><td colspan="2" class="sub-category-header">手入(中傷以上)</td><td id="repair_major"></td></tr>
+<tr><td colspan="2" class="sub-category-header">錬結</td><td id="renketsu"></td></tr>
+<tr><td colspan="2" class="sub-category-header">戦績</td><td id="record"></td></tr>
+<tr><td colspan="2" class="sub-category-header">万屋</td><td id="shop"></td></tr>
+
+<tr><td colspan="2" class="sub-category-header">幕の内弁当</td><td id="bento_makunouchi"></td></tr>
+<tr><td colspan="2" class="sub-category-header">一口団子</td><td id="bento_dango"></td></tr>
+<tr><td colspan="2" class="sub-category-header">御祝重弁当</td><td id="bento_celebration"></td></tr>
+
+<tr><td colspan="2" rowspan="2" class="sub-category-header">豆まき</td><td id="mamemaki_1"></td></tr>
+<tr><td id="mamemaki_2"></td></tr>
+
+<tr><td colspan="2" class="sub-category-header">お花見</td><td id="ohanami"></td></tr>
+
+<tr><td rowspan="3" colspan="2" class="sub-category-header">花火(通常)</td><td id="hanabi_normal_1"></td></tr>
+<tr><td id="hanabi_normal_2"></td></tr>
+<tr><td id="hanabi_normal_3"></td></tr>
+
+<tr><td rowspan="3" colspan="2" class="sub-category-header">花火(願い)</td><td id="hanabi_wish_1"></td></tr>
+<tr><td id="hanabi_wish_2"></td></tr>
+<tr><td id="hanabi_wish_3"></td></tr>
+
+<tr><td colspan="2" class="sub-category-header">修行見送り</td><td id="farewell_training"></td></tr>
+<tr><td colspan="2" class="sub-category-header">修行申し出</td><td id="request_training"></td></tr>
+<tr><td colspan="2" class="sub-category-header">審神者長期留守後御迎</td><td id="return_master"></td></tr>
+<tr><td colspan="2" class="sub-category-header">破壊</td><td id="destroyed"></td></tr>
+
+
+    <tr><th colspan="3" class="section-header">乱舞レベル上昇で追加されるセリフ</th></tr>
+  <tr>
+    <td rowspan="2" class="sub-category-header">乱舞2</td>
+    <td  class="sub-category-header">つつきすぎ(通常)</td>
+    <td id="ranbu2_tutsuki_normal"></td>
+</tr>
+  <tr>
+    <td  class="sub-category-header">つつきすぎ(中傷)</td>
+    <td id="ranbu2_tutsuki_chushou"></td>
+</tr>
+
+  <tr>
+    <td rowspan="4"  class="sub-category-header">乱舞3</td>
+    <td  class="sub-category-header">鍛刀完了</td>
+    <td id="ranbu3_tantou"></td>
+  </tr>
+  <tr>
+    <td  class="sub-category-header">手入完了</td>
+    <td id="ranbu3_teiiri"></td>
+  </tr>
+    <tr>
+      <td  class="sub-category-header">催し物お知らせ</td>
+      <td id="ranbu3_event_notice"></td>
+    </tr>
+    <tr>
+      <td  class="sub-category-header">宝物完成</td>
+      <td id="ranbu3_takaramono_complete"></td>
+    </tr>
+
+  <tr>
+    <td  rowspan="2"  class="sub-category-header">乱舞4</td>
+    <td class="sub-category-header">宝物装備</td>
+    <td id="ranbu4_takaramono_equip"></td>
+  </tr>
+  <tr>
+  <td class="sub-category-header">自動行軍依頼</td>
+  <td id="ranbu4_auto"></td>
+</tr>
+
+<tr>
+  <td rowspan="7" class="sub-category-header">乱舞5</td>
+  <td class="sub-category-header">景趣設定</td>
+  <td id="ranbu5_keishu"></td>
+</tr>
+<tr>
+  <td rowspan="4" class="sub-category-header">刀装作成失敗</td>
+  <td id="ranbu5_tousou_fail1"></td>
+</tr>
+<tr><td id="ranbu5_tousou_fail2"></td></tr>
+<tr><td id="ranbu5_tousou_fail3"></td></tr>
+<tr><td id="ranbu5_tousou_fail4"></td></tr>
+<tr>
+  <td class="sub-category-header">馬装備</td>
+  <td id="ranbu5_horse"></td>
+</tr>
+<tr>
+  <td class="sub-category-header">お守り装備</td>
+  <td id="ranbu5_omamori"></td>
+</tr>
+
+<tr>
+  <td rowspan="1" class="sub-category-header">乱舞6</td>
+  <td class="sub-category-header">出陣決定</td>
+  <td id="ranbu6_sortie"></td>
+</tr>
+
+<tr>
+  <td rowspan="4" class="sub-category-header">乱舞10</td>
+  <td class="sub-category-header">達成記念</td>
+  <td id="ranbu10_achievement"></td>
+</tr>
+<tr>
+  <td class="sub-category-header">贈物(大喜び)</td>
+  <td id="ranbu10_present_happy"></td>
+</tr>
+<tr>
+  <td class="sub-category-header">贈物(喜び)</td>
+  <td id="ranbu10_present_normal"></td>
+</tr>
+<tr>
+  <td class="sub-category-header">贈物(いまいち)</td>
+  <td id="ranbu10_present_bad"></td>
+</tr>
+
+  <tr><th colspan="3" class="section-header">期間限定セリフ</th></tr>
+
+<tr><td colspan="2" class="sub-category-header">正月</td><td id="limited_newyear"></td></tr>
+<tr><td colspan="2" class="sub-category-header">おみくじ選択</td><td id="limited_omikuji_select"></td></tr>
+<tr><td colspan="2" class="sub-category-header">おみくじ(大吉)</td><td id="limited_omikuji_daikichi"></td></tr>
+<tr><td colspan="2" class="sub-category-header">おみくじ(中吉)</td><td id="limited_omikuji_chuukichi"></td></tr>
+<tr><td colspan="2" class="sub-category-header">おみくじ(小吉)</td><td id="limited_omikuji_shoukichi"></td></tr>
+<tr><td colspan="2" class="sub-category-header">七夕</td><td id="limited_tanabata"></td></tr>
+<tr><td colspan="2" class="sub-category-header">連隊戦(部隊交代)</td><td id="limited_formation_change"></td></tr>
+<tr><td colspan="2" class="sub-category-header">鬼退治(出陣)</td><td id="limited_oni_expedition_start"></td></tr>
+<tr><td colspan="2" class="sub-category-header">鬼退治(ボス到達)</td><td id="limited_oni_boss_arrival"></td></tr>
+<tr><td colspan="2" class="sub-category-header">連撃</td><td id="limited_rengeki"></td></tr>
+
+<!-- 大阪城（部隊長） -->
+<tr><td colspan="2" class="sub-category-header">大阪城(1階調査開始/部隊長)</td><td id="limited_osaka1_leader"></td></tr>
+<tr><td colspan="2" class="sub-category-header">大阪城(50階制覇/部隊長)</td><td id="limited_osaka50_clear_leader"></td></tr>
+<tr><td colspan="2" class="sub-category-header">大阪城(99階制覇/部隊長)</td><td id="limited_osaka99_clear_leader"></td></tr>
+
+<!-- 大阪城（隊員） -->
+<tr><td colspan="2" class="sub-category-header">大阪城(10階調査開始/隊員)</td><td id="limited_osaka10_member"></td></tr>
+<tr><td colspan="2" class="sub-category-header">大阪城(20階調査開始/隊員)</td><td id="limited_osaka20_member"></td></tr>
+<tr><td colspan="2" class="sub-category-header">大阪城(30階調査開始/隊員)</td><td id="limited_osaka30_member"></td></tr>
+<tr><td colspan="2" class="sub-category-header">大阪城(40階調査開始/隊員)</td><td id="limited_osaka40_member"></td></tr>
+<tr><td colspan="2" class="sub-category-header">大阪城(50階調査開始/隊員)</td><td id="limited_osaka50_member"></td></tr>
+<tr><td colspan="2" class="sub-category-header">大阪城(60階調査開始/隊員)</td><td id="limited_osaka60_member"></td></tr>
+<tr><td colspan="2" class="sub-category-header">大阪城(70階調査開始/隊員)</td><td id="limited_osaka70_member"></td></tr>
+<tr><td colspan="2" class="sub-category-header">大阪城(80階調査開始/隊員)</td><td id="limited_osaka80_member"></td></tr>
+<tr><td colspan="2" class="sub-category-header">大阪城(90階調査開始/隊員)</td><td id="limited_osaka90_member"></td></tr>
+<tr><td colspan="2" class="sub-category-header">大阪城(99階調査開始/隊員)</td><td id="limited_osaka99_member"></td></tr>
+<tr><td colspan="2" class="sub-category-header">大阪城(千両箱出現/隊員)</td><td id="limited_osaka_treasure_member"></td></tr>
+
+<!-- 記念日系 -->
+<tr><td colspan="2" class="sub-category-header">刀剣乱舞一周年</td><td id="limited_anniv1"></td></tr>
+<tr><td colspan="2" class="sub-category-header">刀剣乱舞二周年</td><td id="limited_anniv2"></td></tr>
+<tr><td colspan="2" class="sub-category-header">刀剣乱舞三周年</td><td id="limited_anniv3"></td></tr>
+<tr><td colspan="2" class="sub-category-header">刀剣乱舞四周年</td><td id="limited_anniv4"></td></tr>
+<tr><td colspan="2" class="sub-category-header">刀剣乱舞五周年</td><td id="limited_anniv5"></td></tr>
+<tr><td colspan="2" class="sub-category-header">刀剣乱舞六周年</td><td id="limited_anniv6"></td></tr>
+<tr><td colspan="2" class="sub-category-header">刀剣乱舞七周年</td><td id="limited_anniv7"></td></tr>
+<tr><td colspan="2" class="sub-category-header">刀剣乱舞八周年</td><td id="limited_anniv8"></td></tr>
+<tr><td colspan="2" class="sub-category-header">刀剣乱舞九周年</td><td id="limited_anniv9"></td></tr>
+<tr><td colspan="2" class="sub-category-header">刀剣乱舞十周年</td><td id="limited_anniv10"></td></tr>
+
+<!-- 審神者就任記念 -->
+<tr><td colspan="2" class="sub-category-header">審神者就任一周年</td><td id="limited_sani1"></td></tr>
+<tr><td colspan="2" class="sub-category-header">審神者就任二周年</td><td id="limited_sani2"></td></tr>
+<tr><td colspan="2" class="sub-category-header">審神者就任三周年</td><td id="limited_sani3"></td></tr>
+<tr><td colspan="2" class="sub-category-header">審神者就任四周年</td><td id="limited_sani4"></td></tr>
+<tr><td colspan="2" class="sub-category-header">審神者就任五周年</td><td id="limited_sani5"></td></tr>
+<tr><td colspan="2" class="sub-category-header">審神者就任六周年</td><td id="limited_sani6"></td></tr>
+<tr><td colspan="2" class="sub-category-header">審神者就任七周年</td><td id="limited_sani7"></td></tr>
+<tr><td colspan="2" class="sub-category-header">審神者就任八周年</td><td id="limited_sani8"></td></tr>
+<tr><td colspan="2" class="sub-category-header">審神者就任九周年</td><td id="limited_sani9"></td></tr>
+<tr><td colspan="2" class="sub-category-header">審神者就任十周年</td><td id="limited_sani10"></td></tr>
+
+ <!-- プッシュ通知 -->
+<tr><th colspan="3" class="section-header">プッシュ通知(音声なし・近侍)</th></tr>
+
+<tr><td colspan="2" class="sub-category-header">遠征完了</td><td id="push_expedition_done"></td></tr>
+<tr><td colspan="2" class="sub-category-header">鍛刀完了</td><td id="push_forge_done"></td></tr>
+<tr><td colspan="2" class="sub-category-header">手入完了</td><td id="push_repair_done"></td></tr>
+<tr><td colspan="2" class="sub-category-header">内番完了</td><td id="push_training_done"></td></tr>
+
+<!-- 散歩 -->
+<tr><th colspan="3" class="section-header">散歩(音声なし・近侍)</th></tr>
+
+<tr><td colspan="2" class="sub-category-header">前日振り返り</td><td id="walk_reflection"></td></tr>
+
+<tr>
+  <td rowspan="2" colspan="2" class="sub-category-header">近侍ピン差し込み</td>
+  <td id="walk_pin_insert_1"></td>
+</tr>
+<tr>
+  <td id="walk_pin_insert_2"></td>
+</tr>
+
+
+      </tbody>
+    </table>
+
+  </section>
+
+  <script type="module" src="detail.js"></script>
+</body>
+</html>
