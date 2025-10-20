@@ -1,8 +1,9 @@
 body { 
     font-family: sans-serif; padding: 20px; 
-    background-image: url('./data/image/287_20251002180556.png'); /* 背景柄の画像 */
-  background-repeat: repeat;       /* タイル状に繰り返す */
-  background-position: top left; 
+    background-image: url('./data/image/287_20251002180556.png') ;
+  background-repeat: repeat;
+  background-position: top left;
+
 }
 
 h1 { 
@@ -113,4 +114,5 @@ table.dataTable td {
   color: #fff;
   border-color: #007bff;
 }
+
 
