@@ -29,7 +29,7 @@ body { font-family: sans-serif;
 
 
  /* 表 */
-table { border-collapse: collapse; width: 100%; }
+table { border-collapse: collapse; width: 100%;  background-color: #ffffff;}
 th, td { border: 1px solid #ccc; padding: 4px 6px; text-align: center; }
 th { background: #f0f0f0; }
 
@@ -214,6 +214,7 @@ td.col-hide  { background: #f4f1f9; }
 /* 必殺 */
 th.col-crit  { background: #6790b0; } 
 td.col-crit  { background: #f0f4f7; }
+
 
 
 
