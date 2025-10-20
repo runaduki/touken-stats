@@ -9,36 +9,150 @@ body {
 
 }
 
+h1 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+/* ===== 計算機のコンテナ ===== */
 .calculator {
   background: white;
-  padding: 20px;
-  margin: auto;
-  width: 300px;
+  padding: 24px;
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-
-
-input {
-  width: 50%;
-  padding: 8px;
-  margin: 10px 0;
+/* ===== ラベルと入力欄 ===== */
+.form-group {
+  text-align: left;
 }
 
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* ===== ボタンスタイル ===== */
+.button-wrapper {
+  text-align: center;
+}
 
 button {
-  padding: 8px 16px;
-  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
   background: #0078d7;
   color: white;
-  font-size: 14px;
+  border: none;
   border-radius: 6px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
-
 
 button:hover {
   background: #005fa3;
+}
+
+/* ===== 結果表示 ===== */
+#result {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+
+/* ===== PC向けレスポンシブ対応 ===== */
+@media (min-width: 600px) {
+  .form-group.select-group {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* ラベルと選択ボックスの間隔 */
+  margin-top: 10px;
+  }
+
+  .form-group.select-group label {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    margin-bottom: 0; /* 縦揃えに調整 */
+  }
+
+  .form-group.select-group select {
+   width: 200px;  /* ここで幅指定 */
+    flex: none;    /* flex-growを解除 */
+  }
+}
+
+button {
+  padding: 15px;
+  margin-top: 10px;
+  border: none;
+  background: #0078d7;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  /* 中央揃え用 */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;  /* 必要に応じて調整 */
+  text-align: center;
+}
+
+#expInput {
+  height: 48px;         /* 高さを大きく */
+     /* 文字サイズアップ */
+  padding: 10px 12px;   /* 内側の余白増加 */
+  border-radius: 8px;   /* 角丸を大きく */
 
 }
+
+
+
+/* ===== スマホ向けレスポンシブ対応 ===== */
+@media (max-width: 480px) {
+  body {
+    font-size: 17px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .calculator {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  input, select, button {
+    font-size: 18px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  #result {
+    font-size: 15px;
+  }
+}
+
