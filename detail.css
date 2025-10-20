@@ -1,0 +1,182 @@
+/* -------------------- */
+/* 全体設定 */
+/* -------------------- */
+body {
+  font-family: "Yu Gothic", sans-serif;
+  background-image: url('./data/image/287_20251002180556.png') ;
+  background-repeat: repeat;
+  background-position: top left;
+  padding: 20px;
+  width: 650px;
+  margin: 0 auto 3px;
+}
+
+/* -------------------- */
+/* テーブル共通設定 */
+/* -------------------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5px;
+  background-color: #fff;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+/* セクションヘッダー */
+.section-header {
+  background-color: #bcbbbb;
+  text-align: center;
+  font-weight: bold;
+  padding: 6px 0;
+  font-size: 1.1em;
+}
+
+
+/* ラベル列 */
+.label {
+    width: 60px;       /* ラベル列固定 */
+  font-weight: bold;
+  background: #f2f2f2;
+  white-space: nowrap;
+  font-size: 1.1em;
+}
+
+/* 値列 */
+.value {
+  width: auto;
+  font-size: 1.1em;
+  background: #ffffff;
+  
+}
+
+
+
+/* 画像セル */
+.image-cell {
+  width: 250px;
+  text-align: center;
+  padding: 4px;
+  background: #fff;
+}
+
+.image-cell img {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.graph-cell {
+  text-align: center; /* 中央寄せ */
+  background: #fff;
+}
+
+.graph-cell img {
+  display: block;
+  margin: 0 auto;        /* 中央寄せ */
+  max-width: 75%;        /* テーブル幅の85%までに制限 */
+  height: auto;          /* 縦横比キープ */
+}
+
+#link-table td.value {
+  text-align: center;
+}
+
+
+/* -------------------- */
+/* セリフテーブル */
+/* -------------------- */
+#serifu-table {
+  margin-top: 20px; /* 上に20px空ける */
+}
+
+
+.serifu-header {
+ background-color: #bcbbbb;
+  text-align: center;
+  font-weight: bold;
+  padding: 6px 0;
+  font-size: 1.1em;
+}
+
+.serifu-table tr {
+   display: table-row; vertical-align: inherit; unicode-bidi: isolate; border-color: inherit;
+}
+
+.serifu-table td, .serifu-table th {
+  font-size: 1em;
+}
+
+.serifu-table td {
+  border: 1px solid silver; color: inherit; margin: 1px; padding: 5px;
+}
+.serifu-table th {
+  background-color: #eee; text-align: center;
+}
+
+/* 共通 */
+table { border-collapse: collapse; width: 650px; margin-bottom: 8px; font-family: "Yu Gothic", sans-serif; background-color: #fff;}
+td, th { border: 1px solid #000000;  padding: 6px 10px; vertical-align: middle; font-size: 14px; }
+
+table th {
+  background-color: #e2e2e2 !important;
+}
+
+/* セクション見出し */
+.section-header {
+  background-color: #c7d7ff;   /* セクション色（例） */
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 0;
+  font-size: 1.07em;
+  
+}
+
+/* サブカテゴリ見出し（乱舞ブロックなど） */
+.sub-category-header {
+  background-color: #f2f6ff;
+  text-align: left;
+  font-weight: 700;
+  padding-left: 10px;
+  font-size: 1.0em;
+   width: 128px;
+}
+
+/* ラベル列（左 / 中央） */
+.label {
+  width: 160px;
+  font-weight: 700;
+  background: #fafafa;
+  white-space: nowrap;
+  font-size: 1.03em;
+}
+
+/* 乱舞（grand）列 */
+.ranbu, .label.grand {
+  width: 80px;
+  background: #fff7e6;
+  text-align: center;
+  font-weight: 800;
+}
+
+/* 値セル（右） */
+.value {
+  background: #ffffff;
+}
+
+
+
+
+/* -------------------- */
+/* バックトップなど */
+/* -------------------- */
+.back-top {
+  text-align: center;
+  margin: 20px;
+}
