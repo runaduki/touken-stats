@@ -19,7 +19,7 @@
       "scout": 33,
       "conceal": 34,
       "critical": 44,
-      "graph": "./data/image/graph/tok/0_doujikiri.png"
+      "graph": "./touken-stats/data/image/graph/tok/0_doujikiri.png"
     },
    "group": ["天下五剣"], 
    "location": {                   
@@ -45,6 +45,6 @@
     "特": "detail.html?id=0",
     "極": ""
   },
-    "image": "./data/image/tatie/tok/0.jpg"
+    "image": "./touken-stats/data/image/tatie/tok/0.jpg"
   }
 ]
