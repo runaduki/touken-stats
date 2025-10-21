@@ -295,6 +295,10 @@
 
   </section>
 
-  <script type="module" src="detail.js"></script>
+  <script type="module" src="detail.js">const testImg = new Image();
+testImg.src = './data/image/tatie/tok/0.jpg';
+testImg.onload = () => console.log('✅ 読み込み成功:', testImg.src);
+testImg.onerror = () => console.error('❌ 読み込み失敗:', testImg.src);
+document.body.appendChild(testImg);</script>
 </body>
 </html>
