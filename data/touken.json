@@ -68,7 +68,7 @@
   "scout": 38,
   "conceal": 35,
   "critical": 30,
-      "graph": "/touken-stats/data/image/graph/tok/3 _mikaduki.png"
+      "graph": "/touken-stats/data/image/graph/tok/3_mikaduki.png"
     },
    "group": ["天下五剣"], 
    "location": {                   
@@ -120,7 +120,7 @@
     "scout": 66,
     "conceal": 69,
     "critical": 69,
-      "graph": "/touken-stats/data/image/graph/kiwami/4 _mikaduki.png"
+      "graph": "/touken-stats/data/image/graph/kiwami/4_mikaduki.png"
     },
    "group": ["天下五剣"], 
    "location": {                   
