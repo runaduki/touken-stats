@@ -47,5 +47,105 @@
     "極": ""
   },
     "image": "/touken-stats/data/image/tatie/tok/0.jpg"
+  },
+   {
+        "id": 3,
+    "name": "三日月宗近 特",
+    "reading": "みかづきむねちか",
+    "type": "太刀",
+    "rarity": "5",
+    "school": "三条",
+    "kiwami": false,
+    "era": "平安時代",
+    "range": "単", 
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+ "hp": 63,
+  "attack": 72,
+  "defense": 72,
+  "mobility": 37,
+  "power": 37,
+  "scout": 38,
+  "conceal": 35,
+  "critical": 30,
+      "graph": "/touken-stats/data/image/graph/tok/3 _mikaduki.png"
+    },
+   "group": ["天下五剣"], 
+   "location": {                   
+  "status": "現存",      
+  "place": "東京国立博物館", 
+  "note": "写しあり"
+},
+"cultural_property": {
+  "designation": "国宝", 
+  "since": "1951年（昭和26年）6月9日",
+  "mei": "三条(名物三日月宗近)"
+},
+
+ "master": "豊臣秀吉 →ねね（高台院） →徳川秀忠 →徳川家 →徳川家達 →中島喜代一 →渡邊三郎 →東京国立博物館",   
+
+    "cv": "鳥海浩輔",
+
+    "release_date": "初期", 
+    "obtain": {
+      "鍛刀": ["通常鍛刀"],
+      "ドロップ": ["4-4(ボスマス)、5-4(ボスマス)"],
+      "イベント": ["2017年06月13日～06月27日 「秘宝の里 楽器集めの段」"],
+      "任務": ["主要任務 「京都（西陣）の敵部隊を300回撃破せよ」 達成報酬、新任審神者特別任務 全任務達成報酬"],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=3",
+    "極": "detail.html?id=4"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/3.jpg"
+  },
+     {
+        "id": 4,
+    "name": "三日月宗近 極",
+    "reading": "みかづきむねちか",
+    "type": "太刀",
+    "rarity": "5",
+    "school": "三条",
+    "kiwami": false,
+    "era": "平安時代",
+    "range": "単", 
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+    "hp": 101,
+    "attack": 129,
+    "defense": 130,
+    "mobility": 67,
+    "power": 89,
+    "scout": 66,
+    "conceal": 69,
+    "critical": 69,
+      "graph": "/touken-stats/data/image/graph/kiwami/4 _mikaduki.png"
+    },
+   "group": ["天下五剣"], 
+   "location": {                   
+  "status": "現存",      
+  "place": "東京国立博物館", 
+  "note": "写しあり"
+},
+"cultural_property": {
+  "designation": "国宝", 
+  "since": "1951年（昭和26年）6月9日",
+  "mei": "三条(名物三日月宗近)"
+},
+
+ "master": "豊臣秀吉 →ねね（高台院） →徳川秀忠 →徳川家 →徳川家達 →中島喜代一 →渡邊三郎 →東京国立博物館",   
+
+    "cv": "鳥海浩輔",
+
+    "release_date": "2022/4/12", 
+    "obtain": {
+
+    },
+    "link": {
+    "特": "detail.html?id=3",
+    "極": "detail.html?id=4"
+  },
+    "image": "/touken-stats/data/image/tatie/kiwami/4.jpg"
   }
 ]
