@@ -124,6 +124,7 @@ function fillCategoryTable(data) {
   catHTML += `<tr><td class="label">所蔵先</td><td class="value">${data.location?.place || ""}</td></tr>`;
   catHTML += `<tr><td class="label">備考</td><td class="value">${data.location?.note || ""}</td></tr>`;
   catHTML += `<tr><td class="label">文化財区分</td><td class="value">${data.cultural_property?.designation || ""} (${data.cultural_property?.since || ""})</td></tr>`;
+  catHTML += `<tr><td class="label">銘</td><td class="value">${data.mei || ""}</td></tr>`;
   catHTML += `<tr><td class="label">所有者</td><td class="value">${data.master || ""}</td></tr>`;
   category.innerHTML = catHTML;
 }
