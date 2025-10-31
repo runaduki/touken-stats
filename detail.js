@@ -133,8 +133,10 @@ function fillCategoryTable(data) {
 // リンクテーブル
 // ---------------------
 function fillLinkTable(data) {
-  const linkBody = document.getElementById('link-body');
+  const linkBody = document.getElementById("link-body");
   if (!linkBody) return;
+
+  const baseName = data.name.replace(/\s*(特三|特二|特|極)$/, ""); // ここで suffix 削除
 
   const stages = Object.entries(data.link || {})
     .filter(([_, url]) => url)
@@ -150,14 +152,20 @@ function fillLinkTable(data) {
         if (stageName === "特二") lv = 50;
         if (stageName === "特三") lv = 75;
       }
-      const stageText = data.name.includes(stageName) ? "" : ` ${stageName}`;
-      const linkText = `${data.name}${stageText}`;
+
+      // ステージ名を付け直す
+      const displayName =
+        stageName === "極"
+          ? `${baseName} 極`
+          : `${baseName} ${stageName}`;
+
       const lvText = lv ? ` (Lv.${lv})` : "";
-      return `<a href="${url}">${linkText}</a>${lvText}`;
+      return `<a href="${url}">${displayName}</a>${lvText}`;
     });
 
   linkBody.innerHTML = `<tr><td class="value" colspan="2">${stages.join(" → ")}</td></tr>`;
 }
+
 
 // ---------------------
 // セリフ読み込み
