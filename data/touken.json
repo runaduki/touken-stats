@@ -176,9 +176,9 @@
     },
    "group": [""], 
    "location": {                   
-  "status": "現存",      
-  "place": "東京国立博物館", 
-  "note": "写しあり"
+  "status": "",      
+  "place": "", 
+  "note": ""
 },
 
 
@@ -222,21 +222,14 @@
     },
    "group": [""], 
    "location": {                   
-  "status": "現存",      
-  "place": "東京国立博物館", 
-  "note": "写しあり"
+  "status": "",      
+  "place": "", 
+  "note": ""
 },
-"cultural_property": {
-  "designation": "国宝", 
-  "since": "1951年（昭和26年）6月9日",
-  "mei": "安綱"
-},
-
- "master": "源頼光、 足利家、豊臣秀吉、徳川家康",   
 
     "cv": "近藤隆",
 
-    "release_date": "2025/8/12", 
+    "release_date": "", 
     "obtain": {
     },
     "link": {
