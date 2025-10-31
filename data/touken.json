@@ -1,6 +1,6 @@
 [
   {
-        "id": 0,
+    "id": 0,
     "name": "童子切安綱 剥落 特",
     "reading": "どうじきりやすつな はくらく",
     "type": "太刀",
@@ -9,6 +9,7 @@
     "kiwami": false,
     "era": "平安時代",
     "range": "単", 
+    "Slot": "3",
     "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
     "stats": {
       "hp": 55,
@@ -58,6 +59,7 @@
     "kiwami": false,
     "era": "平安時代",
     "range": "単", 
+     "Slot": "3",
     "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
     "stats": {
  "hp": 63,
@@ -110,6 +112,7 @@
     "kiwami": false,
     "era": "平安時代",
     "range": "単", 
+       "Slot": "3",
     "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
     "stats": {
     "hp": 101,
@@ -147,5 +150,99 @@
     "極": "detail.html?id=4"
   },
     "image": "/touken-stats/data/image/tatie/kiwami/4.png"
+     },
+  {
+    "id": 5,
+    "name": "小狐丸 特",
+    "reading": "こぎつねまる",
+    "type": "太刀",
+    "rarity": "3",
+    "school": "三条",
+    "kiwami": false,
+    "era": "平安時代",
+    "range": "単", 
+    "Slot": "2",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+     "hp": 58,
+  "attack": 68,
+  "defense": 69,
+  "mobility": 41,
+  "power": 53,
+  "scout": 38,
+  "conceal": 30,
+  "critical": 28,
+      "graph": "/touken-stats/data/image/graph/tok/5_kogitune.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "現存",      
+  "place": "東京国立博物館", 
+  "note": "写しあり"
+},
+
+
+    "cv": "近藤隆",
+
+ "release_date": "初期", 
+    "obtain": {
+      "鍛刀": ["通常鍛刀"],
+      "ドロップ": ["5-4(通常マス)"],
+      "イベント": ["2016年11月24日～2016年12月15日 「秘宝の里 楽器集めの段」、2017年01月31日～2017年02月21日 「秘宝の里 楽器集めの段」"],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=5",
+    "極": "detail.html?id=6"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/5.jpg"
+  },
+  {
+    "id": 6,
+      "name": "小狐丸 極",
+    "reading": "こぎつねまる",
+    "type": "太刀",
+    "rarity": "4",
+    "school": "三条",
+    "kiwami": false,
+    "era": "平安時代",
+    "range": "単", 
+    "Slot": "3",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+    "hp": 102,
+    "attack": 125,
+    "defense": 120,
+    "mobility": 69,
+    "power": 86,
+    "scout": 70,
+    "conceal": 56,
+    "critical": 72,
+      "graph": "/touken-stats/data/image/graph/kiwami/6_kogitune.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "現存",      
+  "place": "東京国立博物館", 
+  "note": "写しあり"
+},
+"cultural_property": {
+  "designation": "国宝", 
+  "since": "1951年（昭和26年）6月9日",
+  "mei": "安綱"
+},
+
+ "master": "源頼光、 足利家、豊臣秀吉、徳川家康",   
+
+    "cv": "近藤隆",
+
+    "release_date": "2025/8/12", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=5",
+    "極": "detail.html?id=6"
+  },
+    "image": "/touken-stats/data/image/tatie/kiwami/6.webp"
   }
 ]
