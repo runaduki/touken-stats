@@ -408,49 +408,49 @@
       "nendoroido_3": "茶菓子があると、とりあえず幸せになるとは思わんか",
       "乱舞レベル上昇で追加されるセリフ": {
         "乱舞2": {
-          "ranbu2_tutsuki_normal": "",
-          "ranbu2_tutsuki_chushou": ""
+          "ranbu2_tutsuki_normal": "はっはっはっは、流石に触りすぎではないか？",
+          "ranbu2_tutsuki_chushou": "気遣いは嬉しいが、焦っても治りは早くならんぞ"
         },
         "乱舞3": {
-          "ranbu3_tantou": "",
-           "ranbu3_teiiri": "",
-          "ranbu3_event_notice": "",
-          "ranbu3_takaramono_complete": ""
+          "ranbu3_tantou": "鍛刀が終わったか",
+           "ranbu3_teiiri": "手入れが終わったか",
+          "ranbu3_event_notice": "催し物だぞ？",
+          "ranbu3_takaramono_complete": "っはっはっはっはっ"
         },
         "乱舞4": {
-          "ranbu4_takaramono_equip": "",
-          "ranbu4_auto": ""
+          "ranbu4_takaramono_equip": "感謝しよう",
+          "ranbu4_auto": "相わかった"
         },
         "乱舞5": {
-          "ranbu5_keishu": "",
-          "ranbu5_tousou_fail1": "",
-          "ranbu5_tousou_fail2": "",  
-          "ranbu5_tousou_fail3": "",
-          "ranbu5_tousou_fail4": "",
-          "ranbu5_horse": "",
-          "ranbu5_omamori": ""
+          "ranbu5_keishu": "模様替えか。よきかなよきかな",
+          "ranbu5_tousou_fail1": "しまったな",
+          "ranbu5_tousou_fail2": "こうではないのか……",  
+          "ranbu5_tousou_fail3": "失敗か",
+          "ranbu5_tousou_fail4": "どうもちがうな",
+          "ranbu5_horse": "ふむ、俺の言うことを聞いてくれるか。助かる",
+          "ranbu5_omamori": "はっはっはっは、心配されてしまったか"
         },
         "乱舞6": {
-          "ranbu6_sortie": ""
+          "ranbu6_sortie": "付いてまいれ"
         },
         "乱舞10": {
-          "ranbu10_achievement": "",
-          "ranbu10_present_happy": "",
-          "ranbu10_present_normal": "",
-          "ranbu10_present_bad": ""
+          "ranbu10_achievement": "驚いたな。宴会かな",
+          "ranbu10_present_happy": "いいものをくれる",
+          "ranbu10_present_normal": "これはまあまあだな",
+          "ranbu10_present_bad": "うーむ"
         }
       },
       "期間限定セリフ": {
-        "limited_newyear": "",
-        "limited_omikuji_select": "",
-        "limited_omikuji_daikichi": "",
-        "limited_omikuji_chuukichi": "",
-        "limited_omikuji_shoukichi": "",
-        "limited_tanabata": "",
-        "limited_formation_change": "",
-        "limited_oni_expedition_start": "",
-        "limited_oni_boss_arrival": "",
-        "limited_rengeki": "",
+        "limited_newyear": "そうだ、初日の出は拝んだか。いや、俺はジジイだからな、早起きしてしまったよ",
+        "limited_omikuji_select": "御籤か。気軽でよかろう",
+        "limited_omikuji_daikichi": "大吉、と出たか",
+        "limited_omikuji_chuukichi": "ほどほどが一番",
+        "limited_omikuji_shoukichi": "ふむ……",
+        "limited_tanabata": "夜空に月はあるか？",
+        "limited_formation_change": "ゆくぞ。俺についてこい",
+        "limited_oni_expedition_start": "ははは、参るか",
+        "limited_oni_boss_arrival": "さて、鬼でも退治してみるか",
+        "limited_rengeki": "よし、一気に決めるか",
         "limited_osaka1_leader": null,
         "limited_osaka50_clear_leader": null,
         "limited_osaka99_clear_leader": null,
@@ -465,37 +465,37 @@
         "limited_osaka90_member": null,
         "limited_osaka99_member": null,
         "limited_osaka_treasure_member": null,
-        "limited_anniv1": null,
-        "limited_anniv2": null,
-        "limited_anniv3": null,
-        "limited_anniv4": null,
-        "limited_anniv5": null,
-        "limited_anniv6": null,
-        "limited_anniv7": null,
-        "limited_anniv8": null,
-        "limited_anniv9": null,
-        "limited_anniv10": null,
-        "limited_sani1": "",
-        "limited_sani2": "",
-        "limited_sani3": "",
-        "limited_sani4": "",
-        "limited_sani5": "",
-        "limited_sani6": "",
-        "limited_sani7": "",
-        "limited_sani8": "",
-        "limited_sani9": "",
-        "limited_sani10": ""
+        "limited_anniv1": "ははは。俺たちも一周年か。だが戦いはまだまだ続く。歴史を守るため、これからも頑張らねばな",
+        "limited_anniv2": "俺たちも二周年だ。この二年の間で変わらぬ事もあれば、変わったこともある。それが歴史というものだな",
+        "limited_anniv3": "三周年を迎え、それまで見かけなかった顔も随分増えた。これが歴史ということだな",
+        "limited_anniv4": "さて、これで四周年だな。この戦いがどこへ向かうのかは俺にもわからん。だが、刀は主に従うのみさ",
+        "limited_anniv5": "ははは。ついに五周年だ。長き時を生きてきた俺たちだが、人の身で主に仕えるようになるとやはり一味も二味も違うな",
+        "limited_anniv6": "六周年か……。俺たちの歴史もまた、新しい道を歩み始めているのだろうな。その先に待つものを、どうか見定めてくれ",
+        "limited_anniv7": "いくら数を重ねようと、本丸の新たな歴史が作られることの大切さは変わりようもない。七周年のこの時に言うのも今更かもしれんがな",
+        "limited_anniv8": "さて、末広がりの八周年。本丸の歴史の裾野はどこまで広がってゆくか……",
+        "limited_anniv9": "九周年か……。ついに大きな節目が見えてきたか。おっと、気が早いな",
+        "limited_anniv10": "ついに十周年か。ははは、戦いが始まった頃とは歴史が変わってしまったかも知れんな。もちろん、いい方向にだ",
+        "limited_sani1": "さあ、主が主役だぞ。なにせ就任一周年だ",
+        "limited_sani2": "就任二周年を迎え、主も堂々としてきたな。よい。そうでなくては",
+        "limited_sani3": "おお、就任三周年の記念日だったか。いやいや、忘れていたわけではないぞ？",
+        "limited_sani4": "右も左もわからぬようであった主も、もう就任四周年か。いやはや、月日の流れを早く感じるな",
+        "limited_sani5": "主よ、これで就任五周年だな。……主は歴史を、時の流れをどう思う？　いやいや、そう難しく考えずともよい。大事に思ってさえいればよいのだ",
+        "limited_sani6": "うむ。節目を越えてやや気が抜けたところもあったのではないか？　だが、これで就任六周年。気分を一新していこう",
+        "limited_sani7": "七……ふむ。七にまつわる話はなにかあったかな。いや、主の就任七周年に、気の利いたことを言おうと思ったのだが",
+        "limited_sani8": "うん、就任八周年だな。これからも末永く、主に幸あれ",
+        "limited_sani9": "就任九周年。く、あるいはきゅう、という読みには忌むものもあるが、それを主から遠ざけるのも俺たちの役割だな",
+        "limited_sani10": "就任十周年を迎えたな。俺たちをここまで率いてきたこと、それはかけがえのない主の歴史。輝かしい思い出となるだろう"
       },
       "プッシュ通知(音声なし・近侍)": {
-        "push_expedition_done": "",
-        "push_forge_done": "",
-        "push_repair_done": "",
-        "push_training_done": ""
+        "push_expedition_done": "遠征部隊が戻ってきたな",
+        "push_forge_done": "鍛刀が終わったか",
+        "push_repair_done": "手入が終わったか",
+        "push_training_done": "内番が終わったようだ"
       },
       "散歩(音声なし・近侍)": {
-        "walk_reflection": "",
-        "walk_pin_insert_1": "", 
-        "walk_pin_insert_2": ""
+        "walk_reflection": "よきかな、よきかな",
+        "walk_pin_insert_1": "よし", 
+        "walk_pin_insert_2": "はいっ"
       }
     }
   },
@@ -632,16 +632,16 @@
         "limited_osaka90_member": null,
         "limited_osaka99_member": null,
         "limited_osaka_treasure_member": null,
-        "limited_anniv1": null,
-        "limited_anniv2": null,
-        "limited_anniv3": null,
-        "limited_anniv4": null,
-        "limited_anniv5": null,
-        "limited_anniv6": null,
-        "limited_anniv7": null,
-        "limited_anniv8": null,
-        "limited_anniv9": null,
-        "limited_anniv10": null,
+        "limited_anniv1": "",
+        "limited_anniv2": "",
+        "limited_anniv3": "",
+        "limited_anniv4": "",
+        "limited_anniv5": "",
+        "limited_anniv6": "",
+        "limited_anniv7": "",
+        "limited_anniv8": "",
+        "limited_anniv9": "",
+        "limited_anniv10": "",
         "limited_sani1": "",
         "limited_sani2": "",
         "limited_sani3": "",
@@ -665,5 +665,5 @@
         "walk_pin_insert_2": ""
       }
     }
-  },
+  }
 ]
