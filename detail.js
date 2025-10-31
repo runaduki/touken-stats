@@ -96,7 +96,7 @@ function fillStatusTable(data) {
     statusHTML += `</tr>`;
   }
   statusHTML += `<tr><td class="label">範囲</td><td class="value">${data.range || ""}</td>
-                 <td class="label">スロット</td><td class="value">3</td></tr>`;
+                 <td class="label">スロット</td><td class="value">${data.Slot || ""}</td></tr>`;
   status.innerHTML = statusHTML;
 }
 
