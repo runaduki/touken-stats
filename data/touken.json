@@ -1,5 +1,5 @@
 [
-  {
+   {
     "id": 0,
     "name": "童子切安綱 剥落 特",
     "reading": "どうじきりやすつな はくらく",
@@ -56,7 +56,7 @@
     "type": "太刀",
     "rarity": "5",
     "school": "三条",
-    "kiwami": false,
+    "kiwami": true,
     "era": "平安時代",
     "range": "単", 
      "Slot": "3",
@@ -107,9 +107,9 @@
     "name": "三日月宗近 極",
     "reading": "みかづきむねちか",
     "type": "太刀",
-    "rarity": "5",
+    "rarity": "6",
     "school": "三条",
-    "kiwami": false,
+    "kiwami": true,
     "era": "平安時代",
     "range": "単", 
        "Slot": "3",
@@ -123,7 +123,7 @@
     "scout": 66,
     "conceal": 69,
     "critical": 69,
-      "graph": "/touken-stats/data/image/graph/kiwami/4_mikaduki.png"
+      "graph": "/touken-stats/data/image/graph/kiwami/4_mikaduki_kiwami.png"
     },
    "group": ["天下五剣"], 
    "location": {                   
@@ -149,7 +149,7 @@
     "特": "detail.html?id=3",
     "極": "detail.html?id=4"
   },
-    "image": "/touken-stats/data/image/tatie/kiwami/4.png"
+    "image": "/touken-stats/data/image/graph/kiwami/4.png"
      },
   {
     "id": 5,
@@ -158,7 +158,7 @@
     "type": "太刀",
     "rarity": "3",
     "school": "三条",
-    "kiwami": false,
+    "kiwami": true,
     "era": "平安時代",
     "range": "単", 
     "Slot": "2",
@@ -204,7 +204,7 @@
     "type": "太刀",
     "rarity": "4",
     "school": "三条",
-    "kiwami": false,
+    "kiwami": true,
     "era": "平安時代",
     "range": "単", 
     "Slot": "3",
@@ -218,7 +218,7 @@
     "scout": 70,
     "conceal": 56,
     "critical": 72,
-      "graph": "/touken-stats/data/image/graph/kiwami/6_kogitune.png"
+      "graph": "/touken-stats/data/image/graph/kiwami/6_kogitune_kiwami.png"
     },
    "group": [""], 
    "location": {                   
@@ -236,7 +236,7 @@
     "特": "detail.html?id=5",
     "極": "detail.html?id=6"
   },
-    "image": "/touken-stats/data/image/tatie/kiwami/6.webp"
+    "image": "/touken-stats/data/image/graph/kiwami/6.webp"
   },
     {
     "id": 7,
@@ -245,7 +245,7 @@
     "type": "大太刀",
     "rarity": "3",
     "school": "三条",
-    "kiwami": false,
+    "kiwami": true,
     "era": "平安時代",
     "range": "複", 
     "Slot": "2",
@@ -294,7 +294,7 @@
     "type": "大太刀",
     "rarity": "4",
     "school": "三条",
-    "kiwami": false,
+    "kiwami": true,
     "era": "平安時代",
     "range": "複", 
     "Slot": "3",
@@ -308,7 +308,7 @@
     "scout": 46,
     "conceal": 50,
     "critical": 72,
-      "graph": "/touken-stats/data/image/graph/kiwami/.png"
+      "graph": "/touken-stats/data/image/graph/kiwami/8_isikirimaru_kiwami.png"
     },
    "group": [""], 
  "location": {                   
@@ -332,6 +332,1925 @@
     "特": "detail.html?id=7",
     "極": "detail.html?id=8"
   },
-    "image": "/touken-stats/data/image/tatie/kiwami/8.webp"
+    "image": "/touken-stats/data/image/graph/kiwami/8.webp"
+  },
+  {
+    "id": 9,
+    "name": "岩融 特",
+    "reading": "いわとおし",
+    "type": "薙刀",
+    "rarity": "3",
+    "school": "三条",
+    "kiwami": true,
+    "era": "平安時代",
+    "range": "全", 
+    "Slot": "2",
+    "stats": {
+  "hp": 60,
+  "attack": 68,
+  "defense": 51,
+  "mobility": 42,
+  "power": 61,
+  "scout": 41,
+  "conceal": 35,
+  "critical": 29,
+      "graph": "/touken-stats/data/image/graph/tok/9_iwatoosi.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=9",
+    "極": "detail.html?id=10"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/9.jpg"
+  },
+    {
+    "id": 10,
+      "name": "岩融 極",
+    "reading": "いわとおし",
+    "type": "薙刀",
+    "rarity": "4",
+    "school": "三条",
+    "kiwami": true,
+    "era": "平安時代",
+    "range": "全", 
+    "Slot": "3",
+    "stats": {
+       "hp": 77,
+    "attack": 125,
+    "defense": 98,
+    "mobility": 57,
+    "power": 115,
+    "scout": 58,
+    "conceal": 58,
+    "critical": 90,
+      "graph": "/touken-stats/data/image/graph/kiwami/10_iwatoosi_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=9",
+    "極": "detail.html?id=10"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/10.jpg"
+  },
+  {
+    "id": 11,
+    "name": "今剣 特",
+    "reading": "いまのつるぎ",
+    "type": "短刀",
+    "rarity": "1",
+    "school": "三条",
+    "kiwami": true,
+    "era": "平安時代",
+    "range": "単", 
+    "Slot": "1",
+    "stats": {
+  "hp": 33,
+  "attack": 26,
+  "defense": 38,
+  "mobility": 58,
+  "power": 31,
+  "scout": 49,
+  "conceal": 40,
+  "critical": 45,
+      "graph": "/touken-stats/data/image/graph/tok/11_imanoturugi.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=11",
+    "極": "detail.html?id=12"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/11.jpg"
+  },
+    {
+    "id": 12,
+      "name": "今剣 極",
+    "reading": "いまのつるぎ",
+    "type": "短刀",
+    "rarity": "2",
+    "school": "三条",
+    "kiwami": true,
+    "era": "平安時代",
+    "range": "単", 
+    "Slot": "2",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+       "hp": 50,
+    "attack": 80,
+    "defense": 82,
+    "mobility": 142,
+    "power": 35,
+    "scout": 120,
+    "conceal": 109,
+    "critical": 60,
+      "graph": "/touken-stats/data/image/graph/kiwami/12_imanoturugi_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=11",
+    "極": "detail.html?id=12"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/12.png"
+  },
+  {
+    "id": 13,
+    "name": "大典太光世 特",
+    "reading": "おおでんたみつよ",
+    "type": "太刀",
+    "rarity": "5",
+    "school": "三池",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "3",
+    "stats": {
+"hp": 70,
+  "attack": 76,
+  "defense": 70,
+  "mobility": 35,
+  "power": 52,
+  "scout": 30,
+  "conceal": 27,
+  "critical": 37,
+      "graph": "/touken-stats/data/image/graph/tok/13_oodenta.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=13",
+    "極": "detail.html?id=14"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/13.jpg"
+  },
+    {
+    "id": 14,
+      "name": "大典太光世 極",
+    "reading": "おおでんたみつよ",
+    "type": "太刀",
+    "rarity": "6",
+    "school": "三池",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "3",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+       "hp": 105,
+    "attack": 138,
+    "defense": 131,
+    "mobility": 61,
+    "power": 87,
+    "scout": 57,
+    "conceal": 59,
+    "critical": 84,
+      "graph": "/touken-stats/data/image/graph/kiwami/14_oodenta_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=13",
+    "極": "detail.html?id=14"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/14.webp"
+  },
+  {
+    "id": 15,
+    "name": "ソハヤノツルキ 特",
+    "reading": "そはやのつるぎ",
+    "type": "太刀",
+    "rarity": "3",
+    "school": "三池",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "2",
+    "stats": {
+  "hp": 61,
+  "attack": 70,
+  "defense": 72,
+  "mobility": 48,
+  "power": 49,
+  "scout": 32,
+  "conceal": 31,
+  "critical": 25,
+      "graph": "/touken-stats/data/image/graph/tok/15_sohaya.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=15",
+    "極": "detail.html?id=16"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/15.jpg"
+  },
+    {
+    "id": 16,
+      "name": "ソハヤノツルキ 極",
+    "reading": "そはやのつるぎ",
+    "type": "太刀",
+    "rarity": "4",
+    "school": "三池",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "3",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+       "hp": 96,
+    "attack": 127,
+    "defense": 129,
+    "mobility": 68,
+    "power": 84,
+    "scout": 58,
+    "conceal": 64,
+    "critical": 70,
+      "graph": "/touken-stats/data/image/graph/kiwami/16_sohaya_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=15",
+    "極": "detail.html?id=16"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/16.png"
+  },
+  {
+    "id": 17,
+    "name": "数珠丸恒次 特",
+    "reading": "じゅずまるつねつぐ",
+    "type": "太刀",
+    "rarity": "5",
+    "school": "青江",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "3",
+    "stats": {
+  "hp": 71,
+  "attack": 62,
+  "defense": 78,
+  "mobility": 38,
+  "power": 52,
+  "scout": 34,
+  "conceal": 30,
+  "critical": 29,
+      "graph": "/touken-stats/data/image/graph/tok/17_sujumaru.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=17",
+    "極": "detail.html?id=18"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/17.jpg"
+  },
+    {
+    "id": 18,
+      "name": "数珠丸恒次 極",
+     "reading": "じゅずまるつねつぐ",
+    "type": "太刀",
+    "rarity": "6",
+    "school": "青江",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "3",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+       "hp": 106,
+    "attack": 123,
+    "defense": 144,
+    "mobility": 60,
+    "power": 81,
+    "scout": 69,
+    "conceal": 63,
+    "critical": 70,
+      "graph": "/touken-stats/data/image/graph/kiwami/18_sujumaru_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=17",
+    "極": "detail.html?id=18"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/18.png"
+  },
+  {
+    "id": 19,
+    "name": "にっかり青江 特",
+    "reading": "にっかりあおえ",
+    "type": "脇差",
+    "rarity": "2",
+    "school": "青江",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "2",
+    "stats": {
+"hp": 39,
+  "attack": 44,
+  "defense": 46,
+  "mobility": 52,
+  "power": 41,
+  "scout": 55,
+  "conceal": 45,
+  "critical": 40,
+      "graph": "/touken-stats/data/image/graph/tok/19_aoe.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=19",
+    "極": "detail.html?id=20"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/19.jpg"
+  },
+    {
+    "id": 20,
+      "name": "にっかり青江 極",
+    "reading": "にっかりあおえ",
+    "type": "脇差",
+    "rarity": "3",
+    "school": "青江",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "2",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+       "hp": 68,
+    "attack": 92,
+    "defense": 88,
+    "mobility": 76,
+    "power": 48,
+    "scout": 119,
+    "conceal": 143,
+    "critical": 55,
+      "graph": "/touken-stats/data/image/graph/kiwami/20_aoe_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=19",
+    "極": "detail.html?id=20"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/20.jpg"
+  },
+  {
+    "id": 21,
+    "name": "鬼丸国綱 特",
+    "reading": "おにまるくにつな",
+    "type": "太刀",
+    "rarity": "5",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "3",
+    "stats": {
+  "hp": 64,
+  "attack": 77,
+  "defense": 67,
+  "mobility": 44,
+  "power": 54,
+  "scout": 33,
+  "conceal": 30,
+  "critical": 33,
+      "graph": "/touken-stats/data/image/graph/tok/21_onimaru.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=21",
+    "極": "detail.html?id=22"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/21.jpg"
+  },
+    {
+    "id": 22,
+      "name": "鬼丸国綱 極",
+    "reading": "おにまるくにつな",
+    "type": "太刀",
+    "rarity": "6",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "3",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+     "hp": 103,
+  "attack": 140,
+  "defense": 120,
+  "mobility": 70,
+  "power": 89,
+  "scout": 64,
+  "conceal": 61,
+  "critical": 76,
+      "graph": "/touken-stats/data/image/graph/kiwami/22_onimaru_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=21",
+    "極": "detail.html?id=22"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/22.webp"
+  },
+  {
+    "id": 23,
+    "name": "鳴狐 特",
+    "reading": "なきぎつね",
+    "type": "打刀",
+    "rarity": "2",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "2",
+    "stats": {
+  "hp": 48,
+  "attack": 58,
+  "defense": 50,
+  "mobility": 51,
+  "power": 53,
+  "scout": 46,
+  "conceal": 41,
+  "critical": 35,
+      "graph": "/touken-stats/data/image/graph/tok/23_nakigitune.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=23",
+    "極": "detail.html?id=24"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/23.jpg"
+  },
+    {
+    "id": 24,
+      "name": "鳴狐 極",
+    "reading": "なきぎつね",
+    "type": "打刀",
+    "rarity": "2",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "2",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+     "hp": 67,
+  "attack": 103,
+  "defense": 98,
+  "mobility": 66,
+  "power": 69,
+  "scout": 90,
+  "conceal": 82,
+  "critical": 77,
+      "graph": "/touken-stats/data/image/graph/kiwami/24_nakigitune_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=23",
+    "極": "detail.html?id=24"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/24.jpg"
+  },
+  {
+    "id": 25,
+    "name": "一期一振 特",
+    "reading": "いちごひとふり",
+    "type": "太刀",
+    "rarity": "4",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "3",
+    "stats": {
+  "hp": 61,
+  "attack": 70,
+  "defense": 72,
+  "mobility": 36,
+  "power": 57,
+  "scout": 39,
+  "conceal": 31,
+  "critical": 30,
+      "graph": "/touken-stats/data/image/graph/tok/25_itigo.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=25",
+    "極": "detail.html?id=26"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/25.jpg"
+  },
+    {
+    "id": 26,
+      "name": "一期一振 極",
+    "reading": "いちごひとふり",
+    "type": "太刀",
+    "rarity": "5",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "3",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+     "hp": 94,
+  "attack": 129,
+  "defense": 128,
+  "mobility": 57,
+  "power": 97,
+  "scout": 68,
+  "conceal": 65,
+  "critical": 68,
+      "graph": "/touken-stats/data/image/graph/kiwami/26_itigo_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=25",
+    "極": "detail.html?id=26"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/26.webp"
+  },
+  {
+    "id": 27,
+    "name": "鯰尾藤四郎 特",
+    "reading": "なまずおとうしろう",
+    "type": "脇差",
+    "rarity": "2",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "2",
+    "stats": {
+  "hp": 35,
+  "attack": 45,
+  "defense": 45,
+  "mobility": 48,
+  "power": 40,
+  "scout": 52,
+  "conceal": 46,
+  "critical": 47,
+      "graph": "/touken-stats/data/image/graph/tok/27_namazuo.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=27",
+    "極": "detail.html?id=28"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/27.jpg"
+  },
+    {
+    "id": 28,
+      "name": "鯰尾藤四郎 極",
+    "reading": "なまずおとうしろう",
+    "type": "脇差",
+    "rarity": "3",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "2",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+     "hp": 65,
+  "attack": 95,
+  "defense": 87,
+  "mobility": 70,
+  "power": 47,
+  "scout": 112,
+  "conceal": 145,
+  "critical": 64,
+      "graph": "/touken-stats/data/image/graph/kiwami/28_namazuo_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=27",
+    "極": "detail.html?id=28"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/28.webp"
+  },
+  {
+    "id": 29,
+    "name": "骨喰藤四郎 特",
+    "reading": "ほねばみとうしろう",
+    "type": "脇差",
+    "rarity": "2",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "2",
+    "stats": {
+  "hp": 41,
+  "attack": 47,
+  "defense": 48,
+  "mobility": 54,
+  "power": 36,
+  "scout": 49,
+  "conceal": 43,
+  "critical": 49,
+      "graph": "/touken-stats/data/image/graph/tok/29_honebami.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=29",
+    "極": "detail.html?id=30"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/29.jpg"
+  },
+    {
+    "id": 30,
+      "name": "骨喰藤四郎 極",
+    "reading": "ほねばみとうしろう",
+    "type": "脇差",
+    "rarity": "3",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "2",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+     "hp": 70,
+  "attack": 99,
+  "defense": 90,
+  "mobility": 79,
+  "power": 41,
+  "scout": 106,
+  "conceal": 140,
+  "critical": 67,
+      "graph": "/touken-stats/data/image/graph/kiwami/30_honebami_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=29",
+    "極": "detail.html?id=30"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/"
+  },
+  {
+    "id": 31,
+    "name": "平野藤四郎 特",
+    "reading": "ひらのとうしろう",
+    "type": "短刀",
+    "rarity": "1",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "1",
+    "stats": {
+  "hp": 34,
+  "attack": 32,
+  "defense": 45,
+  "mobility": 56,
+  "power": 30,
+  "scout": 48,
+  "conceal": 38,
+  "critical": 37,
+      "graph": "/touken-stats/data/image/graph/tok/31_hirano.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=31",
+    "極": "detail.html?id=32"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/31.jpg"
+  },
+    {
+    "id": 32,
+      "name": "平野藤四郎 極",
+    "reading": "ひらのとうしろう",
+    "type": "短刀",
+    "rarity": "2",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "2",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+     "hp": 55,
+  "attack": 90,
+  "defense": 78,
+  "mobility": 138,
+  "power": 42,
+  "scout": 115,
+  "conceal": 112,
+  "critical": 50,
+      "graph": "/touken-stats/data/image/graph/kiwami/32_hirano_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=31",
+    "極": "detail.html?id=32"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/32.webp"
+  },
+  {
+    "id": 33,
+    "name": "厚藤四郎 特",
+    "reading": "あつしとうしろう",
+    "type": "短刀",
+    "rarity": "1",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "1",
+    "stats": {
+    "hp": 36,
+    "attack": 32,
+    "defense": 42,
+    "mobility": 58,
+    "power": 30,
+    "scout": 47,
+    "conceal": 38,
+    "critical": 35,
+      "graph": "/touken-stats/data/image/graph/tok/33_atusi.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=33",
+    "極": "detail.html?id=34"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/33.jpg"
+  },
+    {
+    "id": 34,
+      "name": "厚藤四郎 極",
+    "reading": "あつしとうしろう",
+    "type": "短刀",
+    "rarity": "2",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "2",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+     "hp": 58,
+  "attack": 87,
+  "defense": 84,
+  "mobility": 125,
+  "power": 44,
+  "scout": 110,
+  "conceal": 108,
+  "critical": 48,
+      "graph": "/touken-stats/data/image/graph/kiwami/34_atusi_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=33",
+    "極": "detail.html?id=34"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/34.webp"
+  },
+  {
+    "id": 35,
+    "name": "後藤藤四郎 特",
+    "reading": "ごとうとうしろう",
+    "type": "短刀",
+    "rarity": "1",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "1",
+    "stats": {
+    "hp": 37,
+    "attack": 35,
+    "defense": 44,
+    "mobility": 49,
+    "power": 38,
+    "scout": 51,
+    "conceal": 38,
+    "critical": 37,
+      "graph": "/touken-stats/data/image/graph/tok/35_gotou.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=35",
+    "極": "detail.html?id=36"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/35.jpg"
+  },
+    {
+    "id": 36,
+      "name": "後藤藤四郎 極",
+    "reading": "ごとうとうしろう",
+    "type": "短刀",
+    "rarity": "2",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "2",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+     "hp": 51,
+  "attack": 84,
+  "defense": 82,
+  "mobility": 143,
+  "power": 42,
+  "scout": 113,
+  "conceal": 108,
+  "critical": 50,
+      "graph": "/touken-stats/data/image/graph/kiwami/36_gotou_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=35",
+    "極": "detail.html?id=36"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/36.png"
+  },
+  {
+    "id": 37,
+    "name": "信濃藤四郎 特",
+    "reading": "しなのとうしろう",
+    "type": "短刀",
+    "rarity": "1",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "1",
+    "stats": {
+    "hp": 38,
+    "attack": 27,
+    "defense": 44,
+    "mobility": 51,
+    "power": 30,
+    "scout": 52,
+    "conceal": 44,
+    "critical": 35,
+      "graph": "/touken-stats/data/image/graph/tok/37_sinano.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=37",
+    "極": "detail.html?id=38"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/37.jpg"
+  },
+    {
+    "id": 38,
+      "name": "信濃藤四郎 極",
+    "reading": "しなのとうしろう",
+    "type": "短刀",
+    "rarity": "2",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "2",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+     "hp": 52,
+  "attack": 81,
+  "defense": 80,
+  "mobility": 138,
+  "power": 41,
+  "scout": 120,
+  "conceal": 124,
+  "critical": 48,
+      "graph": "/touken-stats/data/image/graph/kiwami/38_sinano_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=37",
+    "極": "detail.html?id=38"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/38.jpg"
+  },
+  {
+    "id": 39,
+    "name": "前田藤四郎 特",
+    "reading": "まえだとうしろう",
+    "type": "短刀",
+    "rarity": "1",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "1",
+    "stats": {
+    "hp": 36,
+    "attack": 31,
+    "defense": 41,
+    "mobility": 52,
+    "power": 30,
+    "scout": 48,
+    "conceal": 38,
+    "critical": 37,
+      "graph": "/touken-stats/data/image/graph/tok/39_maeda.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=39",
+    "極": "detail.html?id=40"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/39.jpg"
+  },
+    {
+    "id": 40,
+      "name": "前田藤四郎 極",
+    "reading": "まえだとうしろう",
+    "type": "短刀",
+    "rarity": "2",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "2",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+     "hp": 57,
+  "attack": 81,
+  "defense": 83,
+  "mobility": 130,
+  "power": 39,
+  "scout": 112,
+  "conceal": 118,
+  "critical": 47,
+      "graph": "/touken-stats/data/image/graph/kiwami/40_maeda_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=39",
+    "極": "detail.html?id=40"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/40.jpg"
+  },
+  {
+    "id": 41,
+    "name": "秋田藤四郎 特",
+    "reading": "あきたとうしろう",
+    "type": "短刀",
+    "rarity": "1",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "1",
+    "stats": {
+    "hp": 33,
+    "attack": 30,
+    "defense": 42,
+    "mobility": 52,
+    "power": 33,
+    "scout": 46,
+    "conceal": 38,
+    "critical": 38,
+      "graph": "/touken-stats/data/image/graph/tok/41_akita.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=41",
+    "極": "detail.html?id=42"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/41.jpg"
+  },
+    {
+    "id": 42,
+      "name": "秋田藤四郎 極",
+    "reading": "あきたとうしろう",
+    "type": "短刀",
+    "rarity": "2",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "2",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+     "hp": 59,
+  "attack": 82,
+  "defense": 83,
+  "mobility": 140,
+  "power": 39,
+  "scout": 113,
+  "conceal": 110,
+  "critical": 52,
+      "graph": "/touken-stats/data/image/graph/kiwami/42_akita_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=41",
+    "極": "detail.html?id=42"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/42.png"
+  },
+  {
+    "id": 43,
+    "name": "博多藤四郎 特",
+    "reading": "はかたとうしろう",
+    "type": "短刀",
+    "rarity": "1",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "1",
+    "stats": {
+    "hp": 35,
+    "attack": 30,
+    "defense": 38,
+    "mobility": 64,
+    "power": 31,
+    "scout": 58,
+    "conceal": 38,
+    "critical": 33,
+      "graph": "/touken-stats/data/image/graph/tok/43_hakata.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=43",
+    "極": "detail.html?id=44"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/43.jpg"
+  },
+    {
+    "id": 44,
+      "name": "博多藤四郎 極",
+    "reading": "はかたとうしろう",
+    "type": "短刀",
+    "rarity": "2",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "2",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+     "hp": 54,
+  "attack": 85,
+  "defense": 74,
+  "mobility": 145,
+  "power": 35,
+  "scout": 122,
+  "conceal": 112,
+  "critical": 49,
+      "graph": "/touken-stats/data/image/graph/kiwami/44_hakata_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=43",
+    "極": "detail.html?id=44"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/44.png"
+  },
+  {
+    "id": 45,
+    "name": "乱藤四郎 特",
+    "reading": "みだれとうしろう",
+    "type": "短刀",
+    "rarity": "1",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "1",
+    "stats": {
+    "hp": 35,
+    "attack": 31,
+    "defense": 40,
+    "mobility": 55,
+    "power": 30,
+    "scout": 49,
+    "conceal": 39,
+    "critical": 35,
+      "graph": "/touken-stats/data/image/graph/tok/45_midare.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=45",
+    "極": "detail.html?id=46"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/45.jpg"
+  },
+    {
+    "id": 46,
+      "name": "乱藤四郎 極",
+    "reading": "みだれとうしろう",
+    "type": "短刀",
+    "rarity": "1",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "1",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+       "hp": 55,
+  "attack": 86,
+  "defense": 76,
+  "mobility": 138,
+  "power": 38,
+  "scout": 114,
+  "conceal": 105,
+  "critical": 58,
+      "graph": "/touken-stats/data/image/graph/kiwami/46_midare_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=45",
+    "極": "detail.html?id=46"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/46.png"
+  },
+  {
+    "id": 47,
+    "name": "五虎退 特",
+    "reading": "ごこたい",
+    "type": "短刀",
+    "rarity": "1",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "1",
+    "stats": {
+    "hp": 33,
+    "attack": 27,
+    "defense": 39,
+    "mobility": 58,
+    "power": 29,
+    "scout": 48,
+    "conceal": 39,
+    "critical": 40,
+      "graph": "/touken-stats/data/image/graph/tok/47_gokotai.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",   
+    "cv": "",
+ "release_date": "", 
+    "obtain": {
+      "鍛刀": [""],
+      "ドロップ": [""],
+      "イベント": [""],
+      "任務": [""],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=47",
+    "極": "detail.html?id=48"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/47.jpg"
+  },
+    {
+    "id": 48,
+      "name": "五虎退 極",
+    "reading": "ごこたい",
+    "type": "短刀",
+    "rarity": "2",
+    "school": "粟田口",
+    "kiwami": true,
+    "era": "",
+    "range": "単", 
+    "Slot": "2",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+     "hp": 52,
+  "attack": 86,
+  "defense": 75,
+  "mobility": 142,
+  "power": 38,
+  "scout": 115,
+  "conceal": 120,
+  "critical": 50,
+      "graph": "/touken-stats/data/image/graph/kiwami/48_gokotai_kiwami.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "",      
+  "place": "", 
+  "note": ""
+},
+"cultural_property": {
+  "designation": "", 
+  "since": "",
+  "mei": ""
+},
+"master": "",
+
+    "cv": "",
+
+    "release_date": "", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=47",
+    "極": "detail.html?id=48"
+  },
+    "image": "/touken-stats/data/image/graph/kiwami/48.png"
   }
 ]
