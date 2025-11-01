@@ -229,7 +229,7 @@
 
     "cv": "近藤隆",
 
-    "release_date": "", 
+    "release_date": "2021/4/20", 
     "obtain": {
     },
     "link": {
@@ -237,5 +237,101 @@
     "極": "detail.html?id=6"
   },
     "image": "/touken-stats/data/image/tatie/kiwami/6.webp"
+  },
+    {
+    "id": 7,
+    "name": "石切丸 特",
+    "reading": "いしきりまる",
+    "type": "大太刀",
+    "rarity": "3",
+    "school": "三条",
+    "kiwami": false,
+    "era": "平安時代",
+    "range": "複", 
+    "Slot": "2",
+    "stats": {
+      "hp": 72,
+  "attack": 85,
+  "defense": 68,
+  "mobility": 13,
+  "power": 61,
+  "scout": 15,
+  "conceal": 23,
+  "critical": 32,
+      "graph": "/touken-stats/data/image/graph/tok/7_isikirimaru.png"
+    },
+   "group": [""], 
+   "location": {                   
+  "status": "現存（再刃）",      
+  "place": "石切劔箭神社", 
+  "note": "神社側の説明では太刀となっており現在実装されている全太刀の中でも短い方であるが、なぜゲーム中で大太刀とされたかについて原作から明確な説明は今のところない。"
+},
+"cultural_property": {
+  "designation": "重要美術品", 
+  "since": "昭和14年（1939年）2月22日",
+  "mei": "銘 有成 （号：石切丸）"
+},
+"master": "個人蔵→石切劔箭神社",   
+    "cv": "高橋英則",
+ "release_date": "初期", 
+    "obtain": {
+      "鍛刀": ["通常鍛刀"],
+      "ドロップ": ["6-1～6-4(ボスマス)、7-1～7-4(通常マス・ボスマス)、8-1～8-4(通常マス・ボスマス)"],
+      "イベント": ["2016年11月24日～2016年12月15日 「秘宝の里 楽器集めの段」、2017年01月31日～2017年02月21日 「秘宝の里 楽器集めの段」、2023年05月23日～2023年06月13日 「戦力拡充計画」易"],
+      "任務": ["主要任務「京都（市中）の敵部隊を800回撃破せよ」 達成報酬"],
+      "交換": ["引換シール(保存会) 12枚報酬、引換シール(散歩) 30枚報酬"]
+    },
+    "link": {
+    "特": "detail.html?id=7",
+    "極": "detail.html?id=8"
+  },
+    "image": "/touken-stats/data/image/tatie/tok/7.jpg"
+  },
+    {
+    "id": 8,
+      "name": "石切丸 極",
+    "reading": "いしきりまる",
+    "type": "大太刀",
+    "rarity": "4",
+    "school": "三条",
+    "kiwami": false,
+    "era": "平安時代",
+    "range": "複", 
+    "Slot": "3",
+    "equip": ["軽歩兵、重歩兵、軽騎兵、重騎兵、盾兵"], 
+    "stats": {
+    "hp": 105,
+    "attack": 145,
+    "defense": 112,
+    "mobility": 26,
+    "power": 93,
+    "scout": 46,
+    "conceal": 50,
+    "critical": 72,
+      "graph": "/touken-stats/data/image/graph/kiwami/.png"
+    },
+   "group": [""], 
+ "location": {                   
+  "status": "現存（再刃）",      
+  "place": "石切劔箭神社", 
+  "note": "神社側の説明では太刀となっており現在実装されている全太刀の中でも短い方であるが、なぜゲーム中で大太刀とされたかについて原作から明確な説明は今のところない。"
+},
+"cultural_property": {
+  "designation": "重要美術品", 
+  "since": "昭和14年（1939年）2月22日",
+  "mei": "銘 有成 （号：石切丸）"
+},
+"master": "個人蔵→石切劔箭神社",
+
+    "cv": "高橋英則",
+
+    "release_date": "2019/2/26", 
+    "obtain": {
+    },
+    "link": {
+    "特": "detail.html?id=7",
+    "極": "detail.html?id=8"
+  },
+    "image": "/touken-stats/data/image/tatie/kiwami/8.webp"
   }
 ]
