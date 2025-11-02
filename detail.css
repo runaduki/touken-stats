@@ -87,7 +87,9 @@ th, td {
 #link-table td.value {
   text-align: center;
 }
-
+td.value small {
+  font-size: 0.75em;
+}
 
 /* -------------------- */
 /* セリフテーブル */
