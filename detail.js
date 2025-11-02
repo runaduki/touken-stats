@@ -13,6 +13,33 @@ const equipMaster = {
 };
 
 // ---------------------
+// 攻撃範囲マスター
+// ---------------------
+const attackRangeMaster = {
+  "短刀": "単",
+  "脇差": "単",
+  "打刀": "単",
+  "太刀": "単",
+  "剣": "単",
+  "薙刀": "全",
+  "槍": "貫",
+  "大太刀": "複",
+};
+
+
+// ---------------------
+// レア度からスロット
+// ---------------------
+const slotByRarity = {
+  1: 1,
+  2: 2,
+  3: 2,
+  4: 3,
+  5: 3,
+  6: 3
+};
+
+// ---------------------
 // URLパラメータからID取得
 // ---------------------
 const urlParams = new URLSearchParams(window.location.search);
@@ -74,31 +101,33 @@ function fillStatusTable(data) {
     conceal: "隠蔽",
     critical: "必殺"
   };
+  // rarityからslotを算出（なければ空文字）
+  const slot = slotByRarity[data.rarity] ?? "";
+
   let total = Object.keys(statusLabels).reduce((sum, k) => sum + (data.stats?.[k] || 0), 0);
 
   let statusHTML = `<tr><th colspan="4" class="section-header">ステータス</th></tr>`;
-  statusHTML += `<tr><td colspan="4" class="graph-cell">
-                   <img src="${data.stats?.graph || ''}" alt="グラフ">
-                 </td></tr>`;
+  statusHTML += `<tr><td colspan="4" class="graph-cell"><img src="${data.stats?.graph || ''}" alt="グラフ"></td></tr>`;
   statusHTML += `<tr><td class="label">総合</td><td class="value" colspan="3">${total}</td></tr>`;
 
   const statKeys = Object.keys(statusLabels);
   for (let i = 0; i < statKeys.length; i += 2) {
     statusHTML += `<tr>
       <td class="label">${statusLabels[statKeys[i]]}</td>
-      <td class="value">${data.stats?.[statKeys[i]] || ""}</td>`;
-    if (statKeys[i + 1]) {
-      statusHTML += `<td class="label">${statusLabels[statKeys[i + 1]]}</td>
-                     <td class="value">${data.stats?.[statKeys[i + 1]] || ""}</td>`;
-    } else {
-      statusHTML += `<td></td><td></td>`;
-    }
-    statusHTML += `</tr>`;
+      <td class="value">${data.stats?.[statKeys[i]] || ""}</td>
+      <td class="label">${statusLabels[statKeys[i + 1]] || ""}</td>
+      <td class="value">${data.stats?.[statKeys[i + 1]] || ""}</td>
+    </tr>`;
   }
-  statusHTML += `<tr><td class="label">範囲</td><td class="value">${data.range || ""}</td>
-                 <td class="label">スロット</td><td class="value">${data.Slot || ""}</td></tr>`;
-  status.innerHTML = statusHTML;
-}
+
+  statusHTML += `
+    <tr>
+      <td class="label">範囲</td>
+      <td class="value">${attackRangeMaster[data.type] || ""}</td>
+      <td class="label">スロット</td>
+      <td class="value">${slot}</td>
+    </tr>
+  `;
 
 // ---------------------
 // 入手方法
@@ -123,9 +152,28 @@ function fillCategoryTable(data) {
   catHTML += `<tr><td class="label">現況</td><td class="value">${data.location?.status || ""}</td></tr>`;
   catHTML += `<tr><td class="label">所蔵先</td><td class="value">${data.location?.place || ""}</td></tr>`;
   catHTML += `<tr><td class="label">備考</td><td class="value">${data.location?.note || ""}</td></tr>`;
-  catHTML += `<tr><td class="label">文化財区分</td><td class="value">${data.cultural_property?.designation || ""} (${data.cultural_property?.since || ""})</td></tr>`;
+
+  // ✅ 和暦付き日付整形
+  let since = data.cultural_property?.since || "";
+  const match = since.match(/^(.+?)\((.+?)\)(.*)$/);
+  let display;
+  if (match) {
+    const seireki = match[1]; // 1951年
+    const wareki = match[2];  // 昭和26年
+    const day = match[3];     // 6月9日
+    display = `${seireki}<small>［${wareki}］</small>${day}`;
+  } else {
+    display = since;
+  }
+  catHTML += `
+    <tr>
+      <td class="label">文化財区分</td>
+      <td class="value">${data.cultural_property?.designation || ""}（${display}）</td>
+    </tr>`;
+
   catHTML += `<tr><td class="label">銘</td><td class="value">${data.cultural_property?.mei || ""}</td></tr>`;
   catHTML += `<tr><td class="label">所有者</td><td class="value">${data.master || ""}</td></tr>`;
+
   category.innerHTML = catHTML;
 }
 
