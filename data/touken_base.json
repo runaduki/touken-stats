@@ -1501,7 +1501,7 @@
   "reading": "なんかいたろうちょうそん",
   "type": "打刀",
   "school": "-",
-  "kiwami": false,
+  "kiwami": true,
   "stats": {
     "hp": 55,
     "attack": 60,
@@ -1519,7 +1519,7 @@
   "reading": "ひぜんただひろ",
   "type": "脇差",
   "school": "-",
-  "kiwami": false,
+  "kiwami": true,
   "stats": {
     "hp": 41,
     "attack": 48,
@@ -1555,7 +1555,7 @@
   "reading": "くわなごう",
   "type": "打刀",
   "school": "江",
-  "kiwami": false,
+  "kiwami": true,
   "stats": {
     "hp": 53,
     "attack": 61,
@@ -1609,7 +1609,7 @@
   "reading": "まついごう",
   "type": "打刀",
   "school": "江",
-  "kiwami": false,
+  "kiwami": true,
   "stats": {
     "hp": 49,
     "attack": 60,
