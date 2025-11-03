@@ -1295,6 +1295,30 @@
   }
 },
 {
+  "id": 167,
+  "name": "南海太郎朝尊",
+  "reading": "なんかいたろうちょうそん",
+  "type": "打刀",
+  "school": "-",
+  "kiwami": true,
+  "stats": {
+
+  }
+},
+{
+  "id": 169,
+  "name": "肥前忠広",
+  "reading": "ひぜんただひろ",
+  "type": "脇差",
+  "school": "-",
+  "kiwami": true,
+  "stats": {
+
+  }
+},
+
+
+{
   "id": 171,
   "name": "北谷菜切 極",
   "reading": "ちゃたんなきり",
@@ -1310,8 +1334,32 @@
     "conceal": 117,
     "critical": 56
   }
+},
+{
+  "id": 173,
+  "name": "桑名江",
+  "reading": "くわなごう",
+  "type": "打刀",
+  "school": "江",
+  "kiwami": true,
+  "stats": {
+
+  }
+},
+
+{
+  "id": 179,
+  "name": "松井江",
+  "reading": "まついごう",
+  "type": "打刀",
+  "school": "江",
+  "kiwami": true,
+  "stats": {
+    
+  }
 }
 ]
+
 
 
 
