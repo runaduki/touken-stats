@@ -1296,7 +1296,7 @@
 },
 {
   "id": 167,
-  "name": "南海太郎朝尊",
+  "name": "南海太郎朝尊 極",
   "reading": "なんかいたろうちょうそん",
   "type": "打刀",
   "school": "-",
@@ -1307,7 +1307,7 @@
 },
 {
   "id": 169,
-  "name": "肥前忠広",
+  "name": "肥前忠広 極",
   "reading": "ひぜんただひろ",
   "type": "脇差",
   "school": "-",
@@ -1337,7 +1337,7 @@
 },
 {
   "id": 173,
-  "name": "桑名江",
+  "name": "桑名江 極",
   "reading": "くわなごう",
   "type": "打刀",
   "school": "江",
@@ -1349,17 +1349,23 @@
 
 {
   "id": 179,
-  "name": "松井江",
+  "name": "松井江 極",
   "reading": "まついごう",
   "type": "打刀",
   "school": "江",
   "kiwami": true,
-  "stats": {
-    
+"stats": {
+    "hp": 0,
+    "attack": 110,
+    "defense": 98,
+    "mobility": 64,
+    "power": 66,
+    "scout": 0,
+    "conceal": 79,
+    "critical": 89
   }
 }
 ]
-
 
 
 
