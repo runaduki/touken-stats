@@ -2223,14 +2223,13 @@
   "school": "江",
   "kiwami": false,
   "stats": {
-    "hp": 0,
+    "hp": 34,
     "attack": 32,
     "defense": 41,
     "mobility": 53,
     "power": 30,
-    "scout": 0,
+    "scout": 55,
     "conceal": 39,
     "critical": 41
   }
-}
 ]
