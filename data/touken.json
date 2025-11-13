@@ -7557,8 +7557,15 @@
     "era": "",
     "rarity": "3",
     "stats": {
-   
-      "graph": "/touken-stats/data/image/graph/kiwami/173_kuwana_kiwami.png"
+       "hp": 0,
+    "attack": 111,
+    "defense": 109,
+    "mobility": 57,
+    "power": 70,
+    "scout": 0,
+    "conceal": 79,
+    "critical": 74,
+      "graph": "../data/image/グラフ/極/173_kuwana_kiwami.png"
     },
    "group": [""], 
  "location": {                   
@@ -7582,7 +7589,7 @@
     "特": "detail.html?id=172",
     "極": "detail.html?id=173"
   },
-    "image": "/touken-stats/data/image/tatie/kiwami/173.png"
+    "image": "/touken-stats/data/image/tatie/kiwami/173.jpg"
   },
   {
     "id": 174,
@@ -7732,9 +7739,16 @@
     "kiwami": true,
     "era": "",
     "rarity": "3",
-    "stats": {
-   
-      "graph": "/touken-stats/data/image/graph/kiwami/179_matui_kiwami.png"
+ "stats": {
+    "hp": 0,
+    "attack": 110,
+    "defense": 98,
+    "mobility": 64,
+    "power": 66,
+    "scout": 0,
+    "conceal": 79,
+    "critical": 89,
+      "graph": "../data/image/グラフ/極/179_matui_kiwami.png"
     },
    "group": [""], 
  "location": {                   
@@ -7758,7 +7772,7 @@
     "特": "detail.html?id=178",
     "極": "detail.html?id=179"
   },
-    "image": "/touken-stats/data/image/tatie/kiwami/179.png"
+    "image": "/touken-stats/data/image/tatie/kiwami/179.webp"
   },
   {
     "id": 180,
