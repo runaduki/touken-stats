@@ -1343,7 +1343,14 @@
   "school": "江",
   "kiwami": true,
   "stats": {
-
+    "hp": 0,
+    "attack": 111,
+    "defense": 109,
+    "mobility": 57,
+    "power": 70,
+    "scout": 0,
+    "conceal": 79,
+    "critical": 74
   }
 },
 
@@ -1366,6 +1373,7 @@
   }
 }
 ]
+
 
 
 
