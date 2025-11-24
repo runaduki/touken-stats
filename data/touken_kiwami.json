@@ -1302,7 +1302,14 @@
   "school": "-",
   "kiwami": true,
   "stats": {
-
+    "hp": 0,
+    "attack": 108,
+    "defense": 103,
+    "mobility": 60,
+    "power": 66,
+    "scout": 0,
+    "conceal": 80,
+    "critical": 72
   }
 },
 {
@@ -1313,7 +1320,14 @@
   "school": "-",
   "kiwami": true,
   "stats": {
-
+    "hp": 0,
+    "attack": 100,
+    "defense": 85,
+    "mobility": 74,
+    "power": 54,
+    "scout": 0,
+    "conceal": 137,
+    "critical": 69
   }
 },
 
@@ -1373,6 +1387,7 @@
   }
 }
 ]
+
 
 
 
