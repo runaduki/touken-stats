@@ -2232,5 +2232,23 @@
     "conceal": 39,
     "critical": 41
   }
+  },
+  {
+  "id": 248,
+  "name": "三郎国宗",
+  "reading": "さぶろうくにむね",
+  "type": "太刀",
+  "school": "-",
+  "kiwami": false,
+  "stats": {
+    "hp": 0,
+    "attack": 70,
+    "defense": 75,
+    "mobility": 38,
+    "power": 57,
+    "scout": 0,
+    "conceal": 25,
+    "critical": 40
+  }
   }
 ]
