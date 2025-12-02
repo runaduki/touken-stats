@@ -7298,7 +7298,14 @@
     "era": "",
     "rarity": "3",
     "stats": {
-   
+       "hp": 0,
+    "attack": 108,
+    "defense": 103,
+    "mobility": 60,
+    "power": 66,
+    "scout": 0,
+    "conceal": 80,
+    "critical": 72,
       "graph": "/touken-stats/data/image/graph/kiwami/167_nankai_kiwami.png"
     },
    "group": [""], 
@@ -7382,7 +7389,14 @@
     "era": "",
     "rarity": "3",
     "stats": {
-   
+       "hp": 0,
+    "attack": 100,
+    "defense": 85,
+    "mobility": 74,
+    "power": 54,
+    "scout": 0,
+    "conceal": 137,
+    "critical": 69,
       "graph": "/touken-stats/data/image/graph/kiwami/168_hizen_kiwami.png"
     },
    "group": [""], 
@@ -7565,7 +7579,7 @@
     "scout": 0,
     "conceal": 79,
     "critical": 74,
-      "graph": "../data/image/グラフ/極/173_kuwana_kiwami.png"
+      "graph": "/touken-stats/data/image/graph/kiwami/173_kuwana_kiwami.png"
     },
    "group": [""], 
  "location": {                   
@@ -7748,7 +7762,7 @@
     "scout": 0,
     "conceal": 79,
     "critical": 89,
-      "graph": "../data/image/グラフ/極/179_matui_kiwami.png"
+      "graph": "/touken-stats/data/image/graph/kiwami/179_matui_kiwami.png"
     },
    "group": [""], 
  "location": {                   
