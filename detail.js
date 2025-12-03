@@ -245,7 +245,7 @@ function fillLinkTable(data) {
       tr.style.display = isEmpty ? "none" : "";
     }
 
-    // 🔽 再帰的に埋め込み
+    // 再帰的に埋め込み
     function applyValues(obj) {
       for (const [key, val] of Object.entries(obj)) {
         if (val && typeof val === "object" && !Array.isArray(val)) {
