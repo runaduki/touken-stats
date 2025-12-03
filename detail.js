@@ -153,7 +153,7 @@ function fillCategoryTable(data) {
   catHTML += `<tr><td class="label">所蔵先</td><td class="value">${data.location?.place || ""}</td></tr>`;
   catHTML += `<tr><td class="label">備考</td><td class="value">${data.location?.note || ""}</td></tr>`;
 
-  // ✅ 和暦付き日付整形
+  //和暦付き日付整形
   let since = data.cultural_property?.since || "";
   const match = since.match(/^(.+?)\((.+?)\)(.*)$/);
   let display;
@@ -237,7 +237,7 @@ function fillLinkTable(data) {
 
     clearSerifuCells(); // 初期化
 
-    // 🔽 行の表示・非表示を制御する関数
+    //行の表示・非表示を制御する関数
     function toggleRowVisibility(cell, value) {
       const tr = cell.closest("tr");
       if (!tr) return;
