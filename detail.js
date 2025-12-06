@@ -129,6 +129,9 @@ function fillStatusTable(data) {
     </tr>
   `;
 
+  status.innerHTML = statusHTML;
+}
+
 // ---------------------
 // 入手方法
 // ---------------------
