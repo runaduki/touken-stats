@@ -1294,6 +1294,23 @@
   "critical": 88
   }
 },
+  {
+  "id": 163,
+  "name": "祢々切丸 極",
+  "reading": "ねねきりまる",
+  "type": "大太刀",
+  "school": "-",
+  "stats": {
+  "hp": 0,
+  "attack": 150,
+  "defense": 115,
+  "mobility": 45,
+  "power": 89,
+  "scout": 0,
+  "conceal": 49,
+  "critical": 81
+  }
+},
 {
   "id": 167,
   "name": "南海太郎朝尊 極",
@@ -1302,7 +1319,7 @@
   "school": "-",
   "kiwami": true,
   "stats": {
-    "hp": 0,
+    "hp": 72,
     "attack": 108,
     "defense": 103,
     "mobility": 60,
@@ -1387,6 +1404,7 @@
   }
 }
 ]
+
 
 
 
