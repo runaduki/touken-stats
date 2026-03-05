@@ -2267,5 +2267,23 @@
     "conceal": 40,
     "critical": 29
   }
+},
+{
+  "id": 252,
+  "name": "二筋樋貞宗",
+  "reading": "ふたすじひさだむね",
+  "type": "打刀",
+  "school": "貞宗",
+  "kiwami": false,
+  "stats": {
+    "hp": 54,
+    "attack": 63,
+    "defense": 54,
+    "mobility": 51,
+    "power": 57,
+    "scout": 42,
+    "conceal": 34,
+    "critical": 31
+  }
 }
 ]
