@@ -2249,5 +2249,22 @@
     "conceal": 25,
     "critical": 40
   }
+}{
+  "id": 250,
+  "name": "安宅切",
+  "reading": "あたぎぎり",
+  "type": "打刀",
+  "school": "長船",
+  "kiwami": false,
+  "stats": {
+    "hp": 50,
+    "attack": 60,
+    "defense": 55,
+    "mobility": 52,
+    "power": 53,
+    "scout": 45,
+    "conceal": 40,
+    "critical": 29
+  }
 }
 ]
