@@ -16,5 +16,23 @@
       "conceal": 34,
       "critical": 44
     }
+  },
+     {
+    "id": 3,
+     "name": "三日月宗近",
+  "reading": "みかづきむねちか",
+  "type": "太刀",
+  "school": "三条",
+  "kiwami": true, 
+    "stats": {
+"hp": 63,
+  "attack": 72,
+  "defense": 72,
+  "mobility": 37,
+  "power": 37,
+  "scout": 38,
+  "conceal": 35,
+  "critical": 30
+    }
   }
 ]
