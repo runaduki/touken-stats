@@ -2285,5 +2285,23 @@
     "conceal": 34,
     "critical": 31
   }
+},
+{
+  "id": 254,
+  "name": "雲重",
+  "reading": "うんじゅう",
+  "type": "打刀",
+  "school": "鵜飼",
+  "kiwami": false,
+  "stats": {
+    "hp": 0,
+    "attack": 61,
+    "defense": 48,
+    "mobility": 47,
+    "power": 52,
+    "scout": 0,
+    "conceal": 36,
+    "critical": 36
+  }
 }
 ]
