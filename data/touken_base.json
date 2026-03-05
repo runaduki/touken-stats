@@ -2233,7 +2233,7 @@
     "critical": 41
   }
   },
-  {
+{
   "id": 248,
   "name": "三郎国宗",
   "reading": "さぶろうくにむね",
@@ -2241,14 +2241,69 @@
   "school": "-",
   "kiwami": false,
   "stats": {
-    "hp": 0,
+    "hp": 62,
     "attack": 70,
     "defense": 75,
     "mobility": 38,
     "power": 57,
-    "scout": 0,
+    "scout": 33,
     "conceal": 25,
     "critical": 40
   }
+},
+{
+  "id": 250,
+  "name": "安宅切",
+  "reading": "あたぎぎり",
+  "type": "打刀",
+  "school": "長船",
+  "kiwami": false,
+  "stats": {
+    "hp": 50,
+    "attack": 60,
+    "defense": 55,
+    "mobility": 52,
+    "power": 53,
+    "scout": 45,
+    "conceal": 40,
+    "critical": 29
   }
+},
+{
+  "id": 252,
+  "name": "二筋樋貞宗",
+  "reading": "ふたすじひさだむね",
+  "type": "打刀",
+  "school": "貞宗",
+  "kiwami": false,
+  "stats": {
+    "hp": 54,
+    "attack": 63,
+    "defense": 54,
+    "mobility": 51,
+    "power": 57,
+    "scout": 42,
+    "conceal": 34,
+    "critical": 31
+  }
+},
+{
+  "id": 254,
+  "name": "雲重",
+  "reading": "うんじゅう",
+  "type": "打刀",
+  "school": "鵜飼",
+  "kiwami": false,
+  "stats": {
+    "hp": 0,
+    "attack": ,61
+    "defense": 48,
+    "mobility": 47,
+    "power": 52,
+    "scout": 0,
+    "conceal": 36,
+    "critical": 36
+  }
+}
+
 ]
