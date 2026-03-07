@@ -115,4 +115,26 @@ table.dataTable td {
   border-color: #007bff;
 }
 
+.mode-menu,
+.stat-menu,
+.type-menu{
+  margin:10px 0;
+  max-width:622px;
+}
+
+.mode-menu button,
+.stat-menu button,
+.type-menu button{
+  padding:6px 12px;
+  margin:2px;
+  border:1px solid #ccc;
+  background:#f9f9f9;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+button.active{
+  background:#007bff;
+  color:#fff;
+}
 
