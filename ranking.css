@@ -10,14 +10,6 @@ h1 {
     margin-bottom: 20px; 
 }
 
-h2 { 
-    margin-top: 60px; 
-}
-
-h3 { 
-    margin-top: 30px; 
-}
-
  /* 表 */
 /* ランキング表 共通 */
 table[id^="ranking-"] {
@@ -144,5 +136,6 @@ button.active{
   background:#007bff;
   color:#fff;
 }
+
 
 
