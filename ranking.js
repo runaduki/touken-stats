@@ -66,12 +66,12 @@ $(function () {
     data.sort((a, b) => b[statKey] - a[statKey]);
 
     let rankingData = [];
-    let prevValue = null;
-    let displayRank = 0;
+let prevValue = null;
+let displayRank = 0;
 
-    data.forEach((item, i) => {
-      if (item[statKey] !== prevValue) displayRank = i + 1;
-      prevValue = item[statKey];
+data.forEach((item) => {
+  if (item[statKey] !== prevValue) displayRank++;
+  prevValue = item[statKey];
 
       let rankDisplay = displayRank === 1 ? "🥇" :
                         displayRank === 2 ? "🥈" :
@@ -156,11 +156,12 @@ $(document).on("click", ".tab-menu .tab-btn", function () {
   visibleRows.sort((a, b) => b.value - a.value);
 
   // 🔹 同順位処理
-  let prevValue = null;
-  let displayRank = 0;
-  visibleRows.forEach((row, i) => {
-    if (row.value !== prevValue) displayRank = i + 1;
-    prevValue = row.value;
+let prevValue = null;
+let displayRank = 0;
+
+visibleRows.forEach((row) => {
+  if (row.value !== prevValue) displayRank++;
+  prevValue = row.value;
 
     if (displayRank === 1) row.rank = "🥇";
     else if (displayRank === 2) row.rank = "🥈";
@@ -192,5 +193,6 @@ function scrollToTop() {
      // スムーズに戻る
   });
 }
+
 
 
