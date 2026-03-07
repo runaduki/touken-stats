@@ -6,378 +6,42 @@
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
 </head>
 <body>
-  <h1>刀剣ステータスランキング</h1>
+<h1>刀剣ステータスランキング</h1>
 
-  <!-- ジャンプリンク -->
-    <h2>特ランキング</h2>
-    <div class="jump-links">
-      <button class="jump-btn" onclick="scrollToSection('base-total')">総合値</button>
-      <button class="jump-btn" onclick="scrollToSection('base-hp')">生存</button>
-      <button class="jump-btn" onclick="scrollToSection('base-attack')">打撃</button>
-      <button class="jump-btn" onclick="scrollToSection('base-defense')">統率</button>
-      <button class="jump-btn" onclick="scrollToSection('base-mobility')">機動</button>
-      <button class="jump-btn" onclick="scrollToSection('base-power')">衝力</button>
-      <button class="jump-btn" onclick="scrollToSection('base-scout')">偵察</button>
-      <button class="jump-btn" onclick="scrollToSection('base-conceal')">隠蔽</button>
-      <button class="jump-btn" onclick="scrollToSection('base-critical')">必殺</button>
- </div>
-
-    <h2>極ランキング</h2>
-    <div class="jump-links">
-      <button class="jump-btn" onclick="scrollToSection('kiwami-total')">総合値</buttoni>
-      <button class="jump-btn" onclick="scrollToSection('kiwami-hp')">生存</button>
-      <button class="jump-btn" onclick="scrollToSection('kiwami-attack')">打撃</button>
-      <button class="jump-btn" onclick="scrollToSection('kiwami-defense')">統率</button>
-      <button class="jump-btn" onclick="scrollToSection('kiwami-mobility')">機動</button>
-      <button class="jump-btn" onclick="scrollToSection('kiwami-power')">衝力</button>
-      <button class="jump-btn" onclick="scrollToSection('kiwami-scout')">偵察</button>
-      <button class="jump-btn" onclick="scrollToSection('kiwami-conceal')">隠蔽</button>
-      <button class="jump-btn" onclick="scrollToSection('kiwami-critical')">必殺</button>
+<!-- 特 / 極 -->
+<div class="mode-menu">
+  <button class="mode-btn active" data-mode="base">特</button>
+  <button class="mode-btn" data-mode="kiwami">極</button>
 </div>
 
- <!-- 特ランキング  -->
-   
-  <h2 id="base-total">特ランキング - 総合値</h2>
-<div class="tab-menu" data-target="ranking-base-total">
-  <button class="tab-btn active" data-type="all">全て</button>
-  <button class="tab-btn" data-type="短刀">短刀</button>
-  <button class="tab-btn" data-type="脇差">脇差</button>
-  <button class="tab-btn" data-type="打刀">打刀</button>
-  <button class="tab-btn" data-type="太刀">太刀</button>
-  <button class="tab-btn" data-type="大太刀">大太刀</button>
-  <button class="tab-btn" data-type="槍">槍</button>
-  <button class="tab-btn" data-type="薙刀">薙刀</button>
-  <button class="tab-btn" data-type="剣">剣</button>
+<!-- ステータス -->
+<div class="stat-menu">
+  <button class="stat-btn active" data-stat="total">総合</button>
+  <button class="stat-btn" data-stat="hp">生存</button>
+  <button class="stat-btn" data-stat="attack">打撃</button>
+  <button class="stat-btn" data-stat="defense">統率</button>
+  <button class="stat-btn" data-stat="mobility">機動</button>
+  <button class="stat-btn" data-stat="power">衝力</button>
+  <button class="stat-btn" data-stat="scout">偵察</button>
+  <button class="stat-btn" data-stat="conceal">隠蔽</button>
+  <button class="stat-btn" data-stat="critical">必殺</button>
 </div>
 
-
-  <table id="ranking-base-total" class="display" style="width:100%"></table>
-  <!-- ランキング表の下に配置 -->
-<div class="back-top">
-  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
+<!-- 刀種 -->
+<div class="type-menu">
+  <button class="type-btn active" data-type="all">全</button>
+  <button class="type-btn" data-type="短刀">短刀</button>
+  <button class="type-btn" data-type="脇差">脇差</button>
+  <button class="type-btn" data-type="打刀">打刀</button>
+  <button class="type-btn" data-type="太刀">太刀</button>
+  <button class="type-btn" data-type="大太刀">大太刀</button>
+  <button class="type-btn" data-type="槍">槍</button>
+  <button class="type-btn" data-type="薙刀">薙刀</button>
+  <button class="type-btn" data-type="剣">剣</button>
 </div>
 
-
-  <h2 id="base-hp">特ランキング - 生存</h2>
-  <div class="tab-menu" data-target="ranking-base-hp">
-  <button class="tab-btn active" data-type="all">全て</button>
-  <button class="tab-btn" data-type="短刀">短刀</button>
-  <button class="tab-btn" data-type="脇差">脇差</button>
-  <button class="tab-btn" data-type="打刀">打刀</button>
-  <button class="tab-btn" data-type="太刀">太刀</button>
-  <button class="tab-btn" data-type="大太刀">大太刀</button>
-  <button class="tab-btn" data-type="槍">槍</button>
-  <button class="tab-btn" data-type="薙刀">薙刀</button>
-  <button class="tab-btn" data-type="剣">剣</button>
-</div>
-  <table id="ranking-base-hp" class="display" style="width:100%"></table>
-  <!-- ランキング表の下に配置 -->
-<div class="back-top">
-  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
-</div>
-
-
-  <h2 id="base-attack">特ランキング - 打撃</h2>
-    <div class="tab-menu" data-target="ranking-base-attack">
-  <button class="tab-btn active" data-type="all">全て</button>
-  <button class="tab-btn" data-type="短刀">短刀</button>
-  <button class="tab-btn" data-type="脇差">脇差</button>
-  <button class="tab-btn" data-type="打刀">打刀</button>
-  <button class="tab-btn" data-type="太刀">太刀</button>
-  <button class="tab-btn" data-type="大太刀">大太刀</button>
-  <button class="tab-btn" data-type="槍">槍</button>
-  <button class="tab-btn" data-type="薙刀">薙刀</button>
-  <button class="tab-btn" data-type="剣">剣</button>
-</div>
-  <table id="ranking-base-attack" class="display" style="width:100%"></table>
-  <!-- ランキング表の下に配置 -->
-<div class="back-top">
-  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
-</div>
-
-  <h2 id="base-defense">特ランキング - 統率</h2>
-      <div class="tab-menu" data-target="ranking-base-defense">
-  <button class="tab-btn active" data-type="all">全て</button>
-  <button class="tab-btn" data-type="短刀">短刀</button>
-  <button class="tab-btn" data-type="脇差">脇差</button>
-  <button class="tab-btn" data-type="打刀">打刀</button>
-  <button class="tab-btn" data-type="太刀">太刀</button>
-  <button class="tab-btn" data-type="大太刀">大太刀</button>
-  <button class="tab-btn" data-type="槍">槍</button>
-  <button class="tab-btn" data-type="薙刀">薙刀</button>
-  <button class="tab-btn" data-type="剣">剣</button>
-</div>
-  <table id="ranking-base-defense" class="display" style="width:100%"></table>
-  <!-- ランキング表の下に配置 -->
-<div class="back-top">
-  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
-</div>
-
-  <h2 id="base-mobility">特ランキング - 機動</h2>
-        <div class="tab-menu" data-target="ranking-base-mobility">
-  <button class="tab-btn active" data-type="all">全て</button>
-  <button class="tab-btn" data-type="短刀">短刀</button>
-  <button class="tab-btn" data-type="脇差">脇差</button>
-  <button class="tab-btn" data-type="打刀">打刀</button>
-  <button class="tab-btn" data-type="太刀">太刀</button>
-  <button class="tab-btn" data-type="大太刀">大太刀</button>
-  <button class="tab-btn" data-type="槍">槍</button>
-  <button class="tab-btn" data-type="薙刀">薙刀</button>
-  <button class="tab-btn" data-type="剣">剣</button>
-</div>
-  <table id="ranking-base-mobility" class="display" style="width:100%"></table>
-  <!-- ランキング表の下に配置 -->
-<div class="back-top">
-  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
-</div>
-
-  <h2 id="base-power">特ランキング - 衝力</h2>
-  <div class="tab-menu" data-target="ranking-base-power">
-  <button class="tab-btn active" data-type="all">全て</button>
-  <button class="tab-btn" data-type="短刀">短刀</button>
-  <button class="tab-btn" data-type="脇差">脇差</button>
-  <button class="tab-btn" data-type="打刀">打刀</button>
-  <button class="tab-btn" data-type="太刀">太刀</button>
-  <button class="tab-btn" data-type="大太刀">大太刀</button>
-  <button class="tab-btn" data-type="槍">槍</button>
-  <button class="tab-btn" data-type="薙刀">薙刀</button>
-  <button class="tab-btn" data-type="剣">剣</button>
-</div>
-  <table id="ranking-base-power" class="display" style="width:100%"></table>
-  <!-- ランキング表の下に配置 -->
-<div class="back-top">
-  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
-</div>
-
-  <h2 id="base-scout">特ランキング - 偵察</h2>
-  <div class="tab-menu" data-target="ranking-base-scout">
-  <button class="tab-btn active" data-type="all">全て</button>
-  <button class="tab-btn" data-type="短刀">短刀</button>
-  <button class="tab-btn" data-type="脇差">脇差</button>
-  <button class="tab-btn" data-type="打刀">打刀</button>
-  <button class="tab-btn" data-type="太刀">太刀</button>
-  <button class="tab-btn" data-type="大太刀">大太刀</button>
-  <button class="tab-btn" data-type="槍">槍</button>
-  <button class="tab-btn" data-type="薙刀">薙刀</button>
-  <button class="tab-btn" data-type="剣">剣</button>
-</div>
-  <table id="ranking-base-scout" class="display" style="width:100%"></table>
-  <!-- ランキング表の下に配置 -->
-<div class="back-top">
-  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
-</div>
-
-  <h2 id="base-conceal">特ランキング - 隠蔽</h2>
-    <div class="tab-menu" data-target="ranking-base-conceal">
-  <button class="tab-btn active" data-type="all">全て</button>
-  <button class="tab-btn" data-type="短刀">短刀</button>
-  <button class="tab-btn" data-type="脇差">脇差</button>
-  <button class="tab-btn" data-type="打刀">打刀</button>
-  <button class="tab-btn" data-type="太刀">太刀</button>
-  <button class="tab-btn" data-type="大太刀">大太刀</button>
-  <button class="tab-btn" data-type="槍">槍</button>
-  <button class="tab-btn" data-type="薙刀">薙刀</button>
-  <button class="tab-btn" data-type="剣">剣</button>
-</div>
-  <table id="ranking-base-conceal" class="display" style="width:100%"></table>
-  <!-- ランキング表の下に配置 -->
-<div class="back-top">
-  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
-</div>
-
-  <h2 id="base-critical">特ランキング - 必殺</h2>
-    <div class="tab-menu" data-target="ranking-base-critical">
-  <button class="tab-btn active" data-type="all">全て</button>
-  <button class="tab-btn" data-type="短刀">短刀</button>
-  <button class="tab-btn" data-type="脇差">脇差</button>
-  <button class="tab-btn" data-type="打刀">打刀</button>
-  <button class="tab-btn" data-type="太刀">太刀</button>
-  <button class="tab-btn" data-type="大太刀">大太刀</button>
-  <button class="tab-btn" data-type="槍">槍</button>
-  <button class="tab-btn" data-type="薙刀">薙刀</button>
-  <button class="tab-btn" data-type="剣">剣</button>
-</div>
-  <table id="ranking-base-critical" class="display" style="width:100%"></table>
-  <!-- ランキング表の下に配置 -->
-<div class="back-top">
-  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
-</div>
-
-
-  <!-- ...（極ランキング） -->
-
-  <h2 id="kiwami-total">極ランキング - 総合値</h2>
-   <div class="tab-menu" data-target="ranking-kiwami-total">
-  <button class="tab-btn active" data-type="all">全て</button>
-  <button class="tab-btn" data-type="短刀">短刀</button>
-  <button class="tab-btn" data-type="脇差">脇差</button>
-  <button class="tab-btn" data-type="打刀">打刀</button>
-  <button class="tab-btn" data-type="太刀">太刀</button>
-  <button class="tab-btn" data-type="大太刀">大太刀</button>
-  <button class="tab-btn" data-type="槍">槍</button>
-  <button class="tab-btn" data-type="薙刀">薙刀</button>
-  <button class="tab-btn" data-type="剣">剣</button>
-</div>
-  <table id="ranking-kiwami-total" class="display" style="width:100%"></table>
-  <!-- ランキング表の下に配置 -->
-<div class="back-top">
-  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
-</div>
-
-
-  <h2 id="kiwami-hp">極ランキング - 生存</h2>
-     <div class="tab-menu" data-target="ranking-kiwami-hp">
-  <button class="tab-btn active" data-type="all">全て</button>
-  <button class="tab-btn" data-type="短刀">短刀</button>
-  <button class="tab-btn" data-type="脇差">脇差</button>
-  <button class="tab-btn" data-type="打刀">打刀</button>
-  <button class="tab-btn" data-type="太刀">太刀</button>
-  <button class="tab-btn" data-type="大太刀">大太刀</button>
-  <button class="tab-btn" data-type="槍">槍</button>
-  <button class="tab-btn" data-type="薙刀">薙刀</button>
-  <button class="tab-btn" data-type="剣">剣</button>
-</div>
-  <table id="ranking-kiwami-hp" class="display" style="width:100%"></table>
-  <!-- ランキング表の下に配置 -->
-<div class="back-top">
-  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
-</div>
-
-  <h2 id="kiwami-attack">極ランキング - 打撃</h2>
-     <div class="tab-menu" data-target="ranking-kiwami-attack">
-  <button class="tab-btn active" data-type="all">全て</button>
-  <button class="tab-btn" data-type="短刀">短刀</button>
-  <button class="tab-btn" data-type="脇差">脇差</button>
-  <button class="tab-btn" data-type="打刀">打刀</button>
-  <button class="tab-btn" data-type="太刀">太刀</button>
-  <button class="tab-btn" data-type="大太刀">大太刀</button>
-  <button class="tab-btn" data-type="槍">槍</button>
-  <button class="tab-btn" data-type="薙刀">薙刀</button>
-  <button class="tab-btn" data-type="剣">剣</button>
-</div>
-  <table id="ranking-kiwami-attack" class="display" style="width:100%"></table>
-  <!-- ランキング表の下に配置 -->
-<div class="back-top">
-  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
-</div>
-
-
-  <h2 id="kiwami-defense">極ランキング - 統率</h2>
-     <div class="tab-menu" data-target="ranking-kiwami-defense">
-  <button class="tab-btn active" data-type="all">全て</button>
-  <button class="tab-btn" data-type="短刀">短刀</button>
-  <button class="tab-btn" data-type="脇差">脇差</button>
-  <button class="tab-btn" data-type="打刀">打刀</button>
-  <button class="tab-btn" data-type="太刀">太刀</button>
-  <button class="tab-btn" data-type="大太刀">大太刀</button>
-  <button class="tab-btn" data-type="槍">槍</button>
-  <button class="tab-btn" data-type="薙刀">薙刀</button>
-  <button class="tab-btn" data-type="剣">剣</button>
-</div>
-  <table id="ranking-kiwami-defense" class="display" style="width:100%"></table>
-  <!-- ランキング表の下に配置 -->
-<div class="back-top">
-  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
-</div>
-
-  <h2 id="kiwami-mobility">極ランキング - 機動</h2>
-     <div class="tab-menu" data-target="ranking-kiwami-mobility">
-  <button class="tab-btn active" data-type="all">全て</button>
-  <button class="tab-btn" data-type="短刀">短刀</button>
-  <button class="tab-btn" data-type="脇差">脇差</button>
-  <button class="tab-btn" data-type="打刀">打刀</button>
-  <button class="tab-btn" data-type="太刀">太刀</button>
-  <button class="tab-btn" data-type="大太刀">大太刀</button>
-  <button class="tab-btn" data-type="槍">槍</button>
-  <button class="tab-btn" data-type="薙刀">薙刀</button>
-  <button class="tab-btn" data-type="剣">剣</button>
-</div>
-  <table id="ranking-kiwami-mobility" class="display" style="width:100%"></table>
-  <!-- ランキング表の下に配置 -->
-<div class="back-top">
-  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
-</div>
-
-
-  <h2 id="kiwami-power">極ランキング - 衝力</h2>
-     <div class="tab-menu" data-target="ranking-kiwami-power">
-  <button class="tab-btn active" data-type="all">全て</button>
-  <button class="tab-btn" data-type="短刀">短刀</button>
-  <button class="tab-btn" data-type="脇差">脇差</button>
-  <button class="tab-btn" data-type="打刀">打刀</button>
-  <button class="tab-btn" data-type="太刀">太刀</button>
-  <button class="tab-btn" data-type="大太刀">大太刀</button>
-  <button class="tab-btn" data-type="槍">槍</button>
-  <button class="tab-btn" data-type="薙刀">薙刀</button>
-  <button class="tab-btn" data-type="剣">剣</button>
-</div>
-  <table id="ranking-kiwami-power" class="display" style="width:100%"></table>
-  <!-- ランキング表の下に配置 -->
-<div class="back-top">
-  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
-</div>
-
-  <h2 id="kiwami-scout">極ランキング - 偵察</h2>
-     <div class="tab-menu" data-target="ranking-kiwami-scout">
-  <button class="tab-btn active" data-type="all">全て</button>
-  <button class="tab-btn" data-type="短刀">短刀</button>
-  <button class="tab-btn" data-type="脇差">脇差</button>
-  <button class="tab-btn" data-type="打刀">打刀</button>
-  <button class="tab-btn" data-type="太刀">太刀</button>
-  <button class="tab-btn" data-type="大太刀">大太刀</button>
-  <button class="tab-btn" data-type="槍">槍</button>
-  <button class="tab-btn" data-type="薙刀">薙刀</button>
-  <button class="tab-btn" data-type="剣">剣</button>
-</div>
-  <table id="ranking-kiwami-scout" class="display" style="width:100%"></table>
-  <!-- ランキング表の下に配置 -->
-<div class="back-top">
-  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
-</div>
-
-
-  <h2 id="kiwami-conceal">極ランキング - 隠蔽</h2>
-     <div class="tab-menu" data-target="ranking-kiwami-conceal">
-  <button class="tab-btn active" data-type="all">全て</button>
-  <button class="tab-btn" data-type="短刀">短刀</button>
-  <button class="tab-btn" data-type="脇差">脇差</button>
-  <button class="tab-btn" data-type="打刀">打刀</button>
-  <button class="tab-btn" data-type="太刀">太刀</button>
-  <button class="tab-btn" data-type="大太刀">大太刀</button>
-  <button class="tab-btn" data-type="槍">槍</button>
-  <button class="tab-btn" data-type="薙刀">薙刀</button>
-  <button class="tab-btn" data-type="剣">剣</button>
-</div>
-  <table id="ranking-kiwami-conceal" class="display" style="width:100%"></table>
-  <!-- ランキング表の下に配置 -->
-<div class="back-top">
-  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
-</div>
-
-  <h2 id="kiwami-critical">極ランキング - 必殺</h2>
-     <div class="tab-menu" data-target="ranking-kiwami-critical">
-  <button class="tab-btn active" data-type="all">全て</button>
-  <button class="tab-btn" data-type="短刀">短刀</button>
-  <button class="tab-btn" data-type="脇差">脇差</button>
-  <button class="tab-btn" data-type="打刀">打刀</button>
-  <button class="tab-btn" data-type="太刀">太刀</button>
-  <button class="tab-btn" data-type="大太刀">大太刀</button>
-  <button class="tab-btn" data-type="槍">槍</button>
-  <button class="tab-btn" data-type="薙刀">薙刀</button>
-  <button class="tab-btn" data-type="剣">剣</button>
-</div>
-  <table id="ranking-kiwami-critical" class="display" style="width:100%"></table>
-  <!-- ランキング表の下に配置 -->
-<div class="back-top">
-  <button class="back-btn" onclick="scrollToTop()">上に戻る</button>
-</div>
-
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-  <script src="ranking.js"></script>
-  <link rel="stylesheet" href="ranking.css">
-</body>
+<table id="ranking-table" class="display"></table>
 </html>
+
 
 
