@@ -29,6 +29,13 @@ table[id^="ranking-"] {
   background-color: #ffffff;
 }
 
+#ranking-table{
+  border-collapse: collapse;
+  width:100%;
+  max-width:622px;
+  background:#fff;
+}
+
 /* DataTables ラッパーの余計な中央寄せを無効化 */
 .dataTables_wrapper {
   text-align: left !important;
@@ -137,4 +144,5 @@ button.active{
   background:#007bff;
   color:#fff;
 }
+
 
