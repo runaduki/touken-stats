@@ -125,3 +125,19 @@ $(".type-btn").click(function(){
 
   updateRanking();
 });
+// ==========================
+// 🔼 ジャンプリンク用関数
+// ==========================
+function scrollToSection(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+//上に戻るボタンの処理
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+     // スムーズに戻る
+  });
+}
