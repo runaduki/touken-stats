@@ -135,9 +135,9 @@ function scrollToSection(id) {
 }
 
 //上に戻るボタンの処理
-function scrollToTop() {
+window.scrollToTop = function () {
   window.scrollTo({
     top: 0,
-     // スムーズに戻る
+    behavior: "smooth"
   });
-}
+};
