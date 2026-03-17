@@ -98,7 +98,7 @@ function fillStatusTable(data) {
     mobility: "機動",
     power: "衝力",
     scout: "偵察",
-    conceal: "隠蔽",
+    conceal: "隠密",
     critical: "必殺"
   };
   // rarityからslotを算出（なければ空文字）
